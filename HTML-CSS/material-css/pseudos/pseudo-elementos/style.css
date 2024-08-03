@@ -1,0 +1,84 @@
+/*
+Aula de CSS: Pseudo-elementos
+
+Pseudo-elementos:
+Um pseudo-elemento é usado para estilizar uma parte específica de um elemento. Ele é precedido por "::" (dois-pontos duplos).
+
+1. ::after - Insere conteúdo após o conteúdo de um elemento.
+2. ::before - Insere conteúdo antes do conteúdo de um elemento.
+3. ::first-letter - Aplica um estilo ao primeiro caractere de um texto.
+4. ::first-line - Aplica um estilo à primeira linha de um texto.
+5. ::selection - Aplica um estilo à parte do documento que foi selecionada pelo usuário.
+
+Vamos explorar cada um com exemplos e propriedades que você pode usar.
+
+1. ::after
+Exemplo:
+*/
+
+p::after {
+    content: " (fim do parágrafo)"; /* Insere conteúdo após o texto */
+    color: gray; /* Muda a cor do texto inserido */
+    font-size: 12px; /* Define o tamanho da fonte */
+    /* Outras propriedades possíveis: display, margin, padding, border */
+}
+
+/* 
+2. ::before
+Exemplo:
+*/
+
+p::before {
+    content: "Nota: "; /* Insere conteúdo antes do texto */
+    color: red; /* Muda a cor do texto inserido */
+    font-weight: bold; /* Define o peso da fonte */
+    /* Outras propriedades possíveis: display, margin, padding, border */
+}
+
+/* 
+3. ::first-letter
+Exemplo:
+*/
+
+p::first-letter {
+    font-size: 200%; /* Define o tamanho da fonte */
+    font-weight: bold; /* Define o peso da fonte */
+    color: blue; /* Muda a cor do texto */
+    /* Outras propriedades possíveis: float, margin, padding, line-height */
+}
+
+/* 
+4. ::first-line
+Exemplo:
+*/
+
+p::first-line {
+    font-style: italic; /* Define o estilo da fonte */
+    font-size: 16px; /* Define o tamanho da fonte */
+    color: brown; /* Muda a cor do texto */
+    /* Outras propriedades possíveis: font-weight, text-transform, letter-spacing */
+}
+
+/* 
+5. ::selection
+Exemplo:
+*/
+
+::selection {
+    background: yellow; /* Muda a cor de fundo da seleção */
+    color: black; /* Muda a cor do texto da seleção */
+    text-shadow: none; /* Remove a sombra do texto */
+    /* Outras propriedades possíveis: background-color, cursor */
+}
+
+/*
+Explicação adicional:
+
+- ::after e ::before: Requerem a propriedade `content` para funcionar. Podem ser usados para adicionar decorativos ou ícones.
+- ::first-letter: Útil para criar efeitos de capitulares em parágrafos.
+- ::first-line: Permite estilizar apenas a primeira linha de um parágrafo.
+- ::selection: Customiza a aparência do texto quando selecionado pelo usuário.
+
+Fim da aula de pseudo-elementos.
+*/
+

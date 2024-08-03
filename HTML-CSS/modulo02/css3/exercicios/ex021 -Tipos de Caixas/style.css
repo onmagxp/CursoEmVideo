@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    background-color: #DBFCEF;
+    height: 100vh;
+    display: flex; /* Adiciona flexbox ao corpo */
+    flex-direction: column; /* Configura a direção dos itens para coluna */
+}
+
+header {
+    background: #30AD7B;
+}
+
+header h1 {
+    font-size: 32px;
+    text-align: center;
+    text-shadow: 2px 2px 5px #00000080;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+nav a:hover {
+    color: white;
+    cursor: grab;
+}
+
+h1#banner-principal {
+    background-color: #30AD7B;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-display: swap;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+main {
+    padding: 5px;
+    margin: 0;
+    flex: 1; /* Faz com que o main ocupe o espaço disponível */
+}
+
+section {
+    background-color: #91EAC6;
+    margin-bottom: 1px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+aside {
+    background: rgba(18, 132, 86, 0.36);
+    margin: 0;
+    width: max-content;
+}
+
+footer {
+    background: #000000;
+    color: #fff;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    /* remove a margin-top, não é necessária */
+}

@@ -1,0 +1,416 @@
+@charset "UTF-8"; /* Define a codificação de caracteres como UTF-8 */
+
+/*
+Cores utilizadas no projeto:
+Azul Escuro: #002147;
+Dourado: #C5A967;
+Cinza Escuro: #333333;
+Cinza Claro: #E5E5E5;
+Branco: #FFFFFF;
+*/
+/*
+Fontes utilizadas no projeto:
+Cabeçalhos e Títulos: "Playfair Display", serif
+Corpo do Texto: "Lato", sans-serif
+*/
+
+@font-face {
+    font-family: 'Playfair Display'; /* Nome da fonte para cabeçalhos e títulos */
+    src: url('fonts/Playfair_Display/PlayfairDisplay-Regular.otf') format('opentype'); /* URL do arquivo da fonte */
+}
+
+@font-face {
+    font-family: 'Lato'; /* Nome da fonte para o corpo do texto */
+    src: url('fonts/Lato/Lato-Regular.otf') format('opentype'); /* URL do arquivo da fonte */
+}
+
+:root {
+    --cor-Azul-Escuro: #002147; /* Variável para a cor Azul Escuro */
+    --cor-Dourado: #C5A967; /* Variável para a cor Dourado */
+    --cor-Cinza-Escuro: #333333; /* Variável para a cor Cinza Escuro */
+    --cor-Cinza-Claro: #E5E5E5; /* Variável para a cor Cinza Claro */
+    --cor-Branco: #FFFFFF; /* Variável para a cor Branco */
+    --cor-Branco-creme: #E5DCCC; /* Variável para a cor Branco Creme */
+    --font-C-T: 'Playfair Display', serif; /* Variável para a fonte dos cabeçalhos e títulos */
+    --font-corpo: 'Lato', sans-serif; /* Variável para a fonte do corpo do texto */
+}
+
+* {
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o padding padrão de todos os elementos */
+    box-sizing: border-box; /* Define o box-sizing para border-box em todos os elementos */
+}
+
+html, body {
+    height: 100%; /* Define a altura do html e do body para 100% */
+}
+
+body {
+    font-family: var(--font-corpo); /* Aplica a fonte do corpo do texto */
+    line-height: 1.6; /* Define a altura da linha */
+    font-size: 16px; /* Define o tamanho da fonte */
+    background-color: #f5f5f5; /* Define a cor de fundo do body */
+}
+
+h2 {
+    color: var(--cor-Azul-Escuro); /* Aplica a cor Azul Escuro aos h2 */
+    font-size: 2em; /* Define o tamanho da fonte dos h2 */
+    font-family: var(--font-C-T); /* Aplica a fonte dos cabeçalhos e títulos */
+}
+
+p {
+    color: var(--cor-Cinza-Escuro); /* Aplica a cor Cinza Escuro aos parágrafos */
+    font-size: 1.2em; /* Define o tamanho da fonte dos parágrafos */
+    font-family: var(--font-corpo); /* Aplica a fonte do corpo do texto */
+}
+
+header {
+    background-color: var(--cor-Azul-Escuro); /* Define a cor de fundo do cabeçalho */
+}
+
+nav ul {
+    list-style-type: none; /* Remove os marcadores das listas */
+    display: flex; /* Aplica o display flex à lista */
+    justify-content: center; /* Centraliza os itens na horizontal */
+    padding: 0; /* Remove o padding das listas */
+}
+
+nav ul li {
+    padding: 0 10px; /* Define o padding horizontal dos itens da lista */
+    margin: 10px 0; /* Define a margem vertical dos itens da lista */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove a decoração do texto */
+    font-weight: bold; /* Define o texto como negrito */
+    font-size: 15px; /* Define o tamanho da fonte */
+    color: #f5f5f5; /* Define a cor do texto */
+    border-bottom: 2px solid transparent; /* Define uma borda inferior transparente */
+    transition: all 0.3s ease; /* Aplica uma transição suave */
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.836); /* Aplica uma borda inferior ao passar o mouse */
+}
+
+nav ul li a:focus {
+    outline: 2px solid var(--cor-Dourado); /* Adiciona uma borda de foco para acessibilidade */
+}
+
+#textbanner {
+    text-align: center; /* Centraliza o texto */
+    color: var(--cor-Branco-creme); /* Aplica a cor Branco Creme ao texto */
+    padding: 100px 0 220px; /* Define o padding do elemento */
+}
+
+#textbanner h1 {
+    font-size: 3.5em; /* Define o tamanho da fonte do h1 */
+    font-family: var(--font-C-T); /* Aplica a fonte dos cabeçalhos e títulos */
+}
+
+#textbanner h5 {
+    padding-top: 20px; /* Adiciona padding superior */
+    font-size: 2em; /* Define o tamanho da fonte do h5 */
+    font-family: var(--font-C-T); /* Aplica a fonte dos cabeçalhos e títulos */
+}
+
+.c-sobre {
+    display: flex; /* Define o display como flex */
+    align-items: center; /* Alinha os itens no centro verticalmente */
+    justify-content: center; /* Centraliza os itens na horizontal */
+    flex-wrap: wrap; /* Permite a quebra de linha dos itens flex */
+    padding: 100px 30px; /* Define o padding do container */
+    background-color: var(--cor-Branco); /* Define a cor de fundo do container */
+}
+
+.cstexto {
+    flex: 1 1 45%; /* Define o comportamento flex do texto */
+    text-align: center; /* Centraliza o texto */
+    padding-right: 30px; /* Define o padding à direita */
+}
+
+.cstexto h2 {
+    font-size: 3em; /* Define o tamanho da fonte do h2 */
+}
+
+.cstexto p {
+    font-size: 1.5em; /* Define o tamanho da fonte dos parágrafos */
+}
+
+.csimagem {
+    flex: 1 1 45%; /* Define o comportamento flex da imagem */
+    display: flex; /* Define o display como flex */
+    justify-content: center; /* Centraliza os itens na horizontal */
+    padding-top: 30px; /* Adiciona padding superior */
+    padding-left: 30px; /* Adiciona padding à esquerda */
+}
+
+.csimagem img {
+    max-width: 100%; /* Define a largura máxima da imagem */
+    height: auto; /* Define a altura automática da imagem */
+    max-height: 500px; /* Define a altura máxima da imagem */
+}
+
+.c-historia {
+    display: flex; /* Define o display como flex */
+    align-items: center; /* Alinha os itens no centro verticalmente */
+    justify-content: center; /* Centraliza os itens na horizontal */
+    flex-wrap: wrap; /* Permite a quebra de linha dos itens flex */
+    padding: 100px 30px; /* Define o padding do container */
+    background-color: var(--cor-Cinza-Claro); /* Define a cor de fundo do container */
+}
+
+.chtexto {
+    flex: 1 1 45%; /* Define o comportamento flex do texto */
+    text-align: center; /* Centraliza o texto */
+    padding-right: 30px; /* Define o padding à direita */
+}
+
+.chtexto h2 {
+    font-size: 3em; /* Define o tamanho da fonte do h2 */
+}
+
+.chtexto p {
+    font-size: 1.5em; /* Define o tamanho da fonte dos parágrafos */
+}
+
+.chimagem {
+    flex: 1 1 45%; /* Define o comportamento flex da imagem */
+    display: flex; /* Define o display como flex */
+    justify-content: center; /* Centraliza os itens na horizontal */
+    padding-top: 30px; /* Adiciona padding superior */
+    padding-left: 30px; /* Adiciona padding à esquerda */
+}
+
+.chimagem img {
+    max-width: 100%; /* Define a largura máxima da imagem */
+    height: auto; /* Define a altura automática da imagem */
+    max-height: 500px; /* Define a altura máxima da imagem */
+}
+
+#variedades {
+    max-width: 100%; /* Define a largura máxima do container */
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+    padding: 50px 20px; /* Define o padding do container */
+    background-color: var(--cor-Branco); /* Define a cor de fundo do container */
+}
+
+#variedades h2 {
+    text-align: center; /* Centraliza o texto */
+    font-size: 3em; /* Define o tamanho da fonte do h2 */
+}
+
+#variedades p {
+    text-align: center; /* Centraliza o texto */
+    font-size: 1.5em; /* Define o tamanho da fonte dos parágrafos */
+    padding: 30px 0 40px; /* Define o padding dos parágrafos */
+}
+
+.product-grid {
+    display: grid; /* Define o display como grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Define a estrutura das colunas do grid */
+    gap: 20px; /* Define o espaçamento entre os itens do grid */
+    margin-top: 20px; /* Adiciona margem superior */
+}
+
+.product-item {
+    background-color: #FFFFFF; /* Define a cor de fundo do item */
+    border: 1px solid #E5E5E5; /* Define a borda do item */
+    padding: 20px; /* Define o padding do item */
+    text-align: center; /* Centraliza o texto */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao item */
+}
+
+.product-item img {
+    max-width: 100%; /* Define a largura máxima da imagem */
+    height: auto; /* Define a altura automática da imagem */
+}
+
+.product-item h3 {
+    color: #0D1B2A; /* Define a cor do h3 */
+    font-size: 1.2em; /* Define o tamanho da fonte do h3 */
+    margin: 10px 0; /* Define a margem do h3 */
+}
+
+.c-producao {
+    background-color: var(--cor-Cinza-Claro); /* Define a cor de fundo do container */
+    padding: 150px 20px; /* Define o padding do container */
+    display: flex; /* Define o display como flex */
+    align-items: center; /* Alinha os itens no centro verticalmente */
+    justify-content: center; /* Centraliza os itens na horizontal */
+    flex-direction: column; /* Define a direção do flex como coluna */
+}
+.cptexto {
+    max-width: 70%; /* Define a largura máxima */
+    text-align: center; /* Centraliza o texto */
+}
+.cpdtext h2 {
+    font-size: 3em; /* Define o tamanho da fonte do h2 */
+}
+
+.cpdtext p {
+    font-size: 1.5em; /* Define o tamanho da fonte dos parágrafos */
+    padding-bottom: 20px;
+}
+
+.cpdlist ul {
+    list-style-type: none; /* Remove os marcadores das listas */
+    padding-top: 40px; /* Adiciona padding superior */
+    max-width: 100%; /* Define a largura máxima */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.cpdlist ul li {
+    font-size: 1.5em; /* Define o tamanho da fonte dos itens da lista */
+    font-family: var(--font-corpo); /* Aplica a fonte do corpo do texto */
+    text-align: justify-center;
+    padding: 20px;
+}
+
+.c-premio {
+    background-color: var(--cor-Branco); /* Define a cor de fundo do container */
+    padding: 150px 20px; /* Define o padding do container */
+    display: flex; /* Define o display como flex */
+    align-items: center; /* Alinha os itens no centro verticalmente */
+    justify-content: center; /* Centraliza os itens na horizontal */
+    flex-direction: column; /* Define a direção do flex como coluna */
+}
+
+.cptexto {
+    max-width: 70%; /* Define a largura máxima */
+    text-align: center; /* Centraliza o texto */
+}
+
+.cptexto h2 {
+    font-size: 3em; /* Define o tamanho da fonte do h2 */
+    text-align: center; /* Centraliza o texto */
+}
+
+.cptexto p {
+    font-size: 1.5em; /* Define o tamanho da fonte dos parágrafos */
+    text-align: center; /* Centraliza o texto */
+}
+
+.c-contato {
+    background-color: var(--cor-Cinza-Claro); /* Define a cor de fundo do container */
+    padding: 100px 20px; /* Define o padding do container */
+    display: flex; /* Define o display como flex */
+    align-items: center; /* Alinha os itens no centro verticalmente */
+    justify-content: center; /* Centraliza os itens na horizontal */
+    flex-direction: column; /* Define a direção do flex como coluna */
+}
+
+.cctexto {
+    max-width: 70%; /* Define a largura máxima */
+    text-align: center; /* Centraliza o texto */
+}
+
+.cctexto h2 {
+    font-size: 3em; /* Define o tamanho da fonte do h2 */
+}
+
+.cctexto p {
+    font-size: 1.5em; /* Define o tamanho da fonte dos parágrafos */
+}
+
+.cclist ul {
+    padding-top: 20px; /* Adiciona padding superior */
+    list-style-type: none; /* Remove os marcadores das listas */
+}
+
+.cclist ul li {
+    line-height: 2.5; /* Define a altura da linha dos itens da lista */
+    text-align: center; /* Centraliza o texto */
+}
+
+.cclist ul li a {
+    text-decoration: none; /* Remove a decoração do texto */
+    font-size: 1em; /* Define o tamanho da fonte dos links */
+    font-family: var(--font-corpo); /* Aplica a fonte do corpo do texto */
+    color: var(--cor-Cinza-Escuro); /* Define a cor dos links */
+}
+
+.cclist ul li a:focus {
+    outline: 2px solid var(--cor-Dourado); /* Adiciona uma borda de foco para acessibilidade */
+}
+
+.c-footer {
+    background-color: var(--cor-Azul-Escuro); /* Define a cor de fundo do rodapé */
+    font-family: var(--font-C-T); /* Aplica a fonte dos cabeçalhos e títulos */
+    padding: 20px 0 5px 0; /* Define o padding do rodapé */
+    display: flex; /* Define o display como flex */
+    align-items: center; /* Alinha os itens no centro verticalmente */
+    justify-content: center; /* Centraliza os itens na horizontal */
+    flex-direction: column; /* Define a direção do flex como coluna */
+    color: var(--cor-Branco); /* Define a cor do texto */
+}
+
+.cftexto p {
+    text-align: center; /* Centraliza o texto */
+    font-size: 0.8em; /* Define o tamanho da fonte dos parágrafos */
+    color: var(--cor-Branco-creme);
+}
+
+@media (max-width: 768px) { /* Estilos para telas com largura máxima de 768px */
+    .c-sobre, .c-historia {
+        flex-direction: column; /* Altera a direção do flex para coluna */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .cstexto, .chtexto, .csimagem, .chimagem {
+        flex: 1 1 100%; /* Define o comportamento flex dos elementos */
+        padding: 0; /* Remove o padding */
+        justify-content: center; /* Centraliza os itens na horizontal */
+    }
+
+    .csimagem, .chimagem {
+        margin-top: 20px; /* Adiciona margem superior */
+    }
+
+    #variedades {
+        padding: 100px 30px; /* Define o padding do container */
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr; /* Define a estrutura das colunas do grid */
+    }
+
+    .product-item {
+        padding: 10px; /* Define o padding do item */
+    }
+
+    .c-produção {
+        width: 100%;
+    }
+    .cpdtext {
+        text-align: center;
+    }
+
+    .cpdlist ul{
+        padding: 0;
+        flex-flow: column wrap;
+    }
+
+    .cpdlist ul li {
+        padding-bottom: 5px;
+    }
+
+    .cptexto {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .cctexto {
+        padding: 0;
+        max-width: 100%;
+    }
+
+}
+
+
+

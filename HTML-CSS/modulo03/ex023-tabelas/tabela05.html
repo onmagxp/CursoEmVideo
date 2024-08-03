@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100%;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        
+        .t-container {
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            padding: 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+            background-color: bisque;
+            width: 500px;
+            height: auto;
+        }
+
+        caption {
+            font-size: 1.3em;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        th, tr, td {
+            border: 1px solid black;
+        }
+
+        tr > th {
+            padding-top: 10px;
+            padding-bottom: 5px;
+        }
+
+        tr > td {
+            padding: 3px 0 0 10px;
+        }
+
+        tr > td:nth-child(2), tr > td:nth-child(3) {
+        text-align: center;
+        }
+
+        .csexo {
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Exercício de Tabela</h1>
+    <div class="t-container">
+        <table>
+            <colgroup>
+                <col class="cnome">
+                <col class="csexo" span="2">
+                <!--<col class=" cidade"> como eu adicionei span="2" na col CSEXO, não precisa criar esse col para IDADE.-->
+                <col class="cprofessor">
+            </colgroup>
+            <caption><strong>Cadastro</strong></caption>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Professor</th>
+            </tr>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Kleber</td>
+                <td>M</td>
+                <td>30</td>
+                <td>Futebol</td>
+            </tr>
+            <tr>
+                <td>Paulo</td>
+                <td>M</td>
+                <td>27</td>
+                <td>Álgebra</td>
+            </tr>
+            <tr>
+                <td>Micaela</td>
+                <td>F</td>
+                <td>30</td>
+                <td>Física</td>
+            </tr>
+            <tr>
+                <td>Márcia</td>
+                <td>F</td>
+                <td>26</td>
+                <td>Química</td>
+            </tr>
+            <tr>
+                <td>Anderson</td>
+                <td>M</td>
+                <td>33</td>
+                <td>História</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

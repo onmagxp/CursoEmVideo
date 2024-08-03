@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        h1 {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        caption {
+            background-color: rgba(82, 81, 81, 0.868);
+        }
+
+        .table-container {
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            padding: 20px;
+        }
+
+        table {
+            position: relative;
+            width: 700px;
+            height: auto;
+            border-collapse: collapse;
+        }
+
+        table td, tr, th {
+            border: 1px solid darkblue;
+            padding-top: 10px;
+        }
+
+        thead tr, tfoot tr {
+            background-color: rgba(0, 0, 0, 0.857);
+            color: whitesmoke;
+            padding: 20px;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.857);
+            color: whitesmoke;
+            padding: 20px;
+
+        }
+        tbody tr:nth-child(2n) {
+            background-color: rgba(72, 72, 72, 0.43);
+        }
+
+        .estados {
+            text-align: left;
+            padding-left: 10px;
+        }
+
+        .populacao {
+            text-align: right;
+            padding-right: 10px;
+        }
+        
+        .comparavel {
+            text-align: center;
+        }
+        
+        .estados a {
+            text-decoration: none;
+        }
+        
+        .comparavel a {
+            text-decoration: none;
+        }
+
+        .estados a:hover, .comparavel a:hover {
+            text-decoration: underline;
+            color: darkblue;
+        }
+
+        tfoot {
+            background: rgba(169, 169, 169, 0.506);;
+        }
+
+        .total {
+            text-align: center;
+            padding: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas Grandes</h1>
+    <!--
+    Anatomia para Tabelas Grandes:
+    <table>
+        <Caption> - Titulo ou melhor dizendo Legenda da Tabela
+            <thead>
+                <tr>,<td>,<th>
+            <tbody>
+                <tr>,<td>,<th>
+            <tfoot>
+                <tr>,<td>,<th>
+    -->
+
+    <div class="table-container">
+        <table>
+            <caption>População das Unidades Federativas</caption>
+            <thead>
+                <tr>
+                    <th scope="col" id="estados">Estado</th>
+                    <th scope="col" id="populacao">População</th>
+                    <th scope="col" id="comparavel">País comparável</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="estados"><a href="#">São Paulo</a></td>
+                    <td class="populacao">44 411 238</td>
+                    <td class="comparavel"><a href="#">Argentina</a></td>
+                </tr>
+                <tr>
+                    <td class="estados"><a href="#">Minas Gerais</a></td>
+                    <td class="populacao"> 20 538 718</td>
+                    <td class="comparavel"><a href="#">Burquina Fasso</a></td>
+                </tr>
+                <tr>
+                    <td class="estados"><a href="#">Rio de Janeiro</a></td>
+                    <td class="populacao">16 054 524</td>
+                    <td class="comparavel"><a href="#">Cambooja</a></td>
+                </tr>
+                <tr>
+                    <td class="estados"><a href="#">Bahia</a></td>
+                    <td class="populacao">14141626</td>
+                    <td class="comparavel"><a href="#">Zimbabwe</a></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">Total de Habitantes</th>
+                    <td class="total"><strong>0000</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, consequuntur earum in reiciendis doloribus sunt corporis ipsam facilis iste, omnis saepe. Mollitia sunt obcaecati quas quaerat delectus a voluptate aspernatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius pariatur expedita deserunt exercitationem delectus unde, dolor, voluptatum, dignissimos officiis suscipit id inventore. Porro perspiciatis rem, maiores dignissimos ab quas nam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam illo libero dignissimos mollitia hic impedit blanditiis eos minus, delectus cum alias cumque quibusdam facilis! Temporibus ipsam excepturi vel doloribus quam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic dignissimos corrupti, architecto possimus odit aut iusto! Totam magnam ipsam, dolore, nobis rem eum voluptatum voluptas, accusamus repellat dolorum error saepe. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum error odit, magni hic eos maiores minima doloribus laudantium vero laborum nesciunt nisi architecto repellat exercitationem, sit ipsum dicta velit nam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, consequuntur earum in reiciendis doloribus sunt corporis ipsam facilis iste, omnis saepe. Mollitia sunt obcaecati quas quaerat delectus a voluptate aspernatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius pariatur expedita deserunt exercitationem delectus unde, dolor, voluptatum, dignissimos officiis suscipit id inventore. Porro perspiciatis rem, maiores dignissimos ab quas nam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam illo libero dignissimos mollitia hic impedit blanditiis eos minus, delectus cum alias cumque quibusdam facilis! Temporibus ipsam excepturi vel doloribus quam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic dignissimos corrupti, architecto possimus odit aut iusto! Totam magnam ipsam, dolore, nobis rem eum voluptatum voluptas, accusamus repellat dolorum error saepe. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum error odit, magni hic eos maiores minima doloribus laudantium vero laborum nesciunt nisi architecto repellat exercitationem, sit ipsum dicta velit nam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, consequuntur earum in reiciendis doloribus sunt corporis ipsam facilis iste, omnis saepe. Mollitia sunt obcaecati quas quaerat delectus a voluptate aspernatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius pariatur expedita deserunt exercitationem delectus unde, dolor, voluptatum, dignissimos officiis suscipit id inventore. Porro perspiciatis rem, maiores dignissimos ab quas nam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam illo libero dignissimos mollitia hic impedit blanditiis eos minus, delectus cum alias cumque quibusdam facilis! Temporibus ipsam excepturi vel doloribus quam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic dignissimos corrupti, architecto possimus odit aut iusto! Totam magnam ipsam, dolore, nobis rem eum voluptatum voluptas, accusamus repellat dolorum error saepe. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum error odit, magni hic eos maiores minima doloribus laudantium vero laborum nesciunt nisi architecto repellat exercitationem, sit ipsum dicta velit nam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, consequuntur earum in reiciendis doloribus sunt corporis ipsam facilis iste, omnis saepe. Mollitia sunt obcaecati quas quaerat delectus a voluptate aspernatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius pariatur expedita deserunt exercitationem delectus unde, dolor, voluptatum, dignissimos officiis suscipit id inventore. Porro perspiciatis rem, maiores dignissimos ab quas nam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam illo libero dignissimos mollitia hic impedit blanditiis eos minus, delectus cum alias cumque quibusdam facilis! Temporibus ipsam excepturi vel doloribus quam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic dignissimos corrupti, architecto possimus odit aut iusto! Totam magnam ipsam, dolore, nobis rem eum voluptatum voluptas, accusamus repellat dolorum error saepe. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum error odit, magni hic eos maiores minima doloribus laudantium vero laborum nesciunt nisi architecto repellat exercitationem, sit ipsum dicta velit nam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, consequuntur earum in reiciendis doloribus sunt corporis ipsam facilis iste, omnis saepe. Mollitia sunt obcaecati quas quaerat delectus a voluptate aspernatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius pariatur expedita deserunt exercitationem delectus unde, dolor, voluptatum, dignissimos officiis suscipit id inventore. Porro perspiciatis rem, maiores dignissimos ab quas nam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam illo libero dignissimos mollitia hic impedit blanditiis eos minus, delectus cum alias cumque quibusdam facilis! Temporibus ipsam excepturi vel doloribus quam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic dignissimos corrupti, architecto possimus odit aut iusto! Totam magnam ipsam, dolore, nobis rem eum voluptatum voluptas, accusamus repellat dolorum error saepe. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum error odit, magni hic eos maiores minima doloribus laudantium vero laborum nesciunt nisi architecto repellat exercitationem, sit ipsum dicta velit nam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, consequuntur earum in reiciendis doloribus sunt corporis ipsam facilis iste, omnis saepe. Mollitia sunt obcaecati quas quaerat delectus a voluptate aspernatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius pariatur expedita deserunt exercitationem delectus unde, dolor, voluptatum, dignissimos officiis suscipit id inventore. Porro perspiciatis rem, maiores dignissimos ab quas nam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam illo libero dignissimos mollitia hic impedit blanditiis eos minus, delectus cum alias cumque quibusdam facilis! Temporibus ipsam excepturi vel doloribus quam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic dignissimos corrupti, architecto possimus odit aut iusto! Totam magnam ipsam, dolore, nobis rem eum voluptatum voluptas, accusamus repellat dolorum error saepe. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum error odit, magni hic eos maiores minima doloribus laudantium vero laborum nesciunt nisi architecto repellat exercitationem, sit ipsum dicta velit nam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, consequuntur earum in reiciendis doloribus sunt corporis ipsam facilis iste, omnis saepe. Mollitia sunt obcaecati quas quaerat delectus a voluptate aspernatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius pariatur expedita deserunt exercitationem delectus unde, dolor, voluptatum, dignissimos officiis suscipit id inventore. Porro perspiciatis rem, maiores dignissimos ab quas nam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam illo libero dignissimos mollitia hic impedit blanditiis eos minus, delectus cum alias cumque quibusdam facilis! Temporibus ipsam excepturi vel doloribus quam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic dignissimos corrupti, architecto possimus odit aut iusto! Totam magnam ipsam, dolore, nobis rem eum voluptatum voluptas, accusamus repellat dolorum error saepe. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum error odit, magni hic eos maiores minima doloribus laudantium vero laborum nesciunt nisi architecto repellat exercitationem, sit ipsum dicta velit nam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, consequuntur earum in reiciendis doloribus sunt corporis ipsam facilis iste, omnis saepe. Mollitia sunt obcaecati quas quaerat delectus a voluptate aspernatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius pariatur expedita deserunt exercitationem delectus unde, dolor, voluptatum, dignissimos officiis suscipit id inventore. Porro perspiciatis rem, maiores dignissimos ab quas nam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam illo libero dignissimos mollitia hic impedit blanditiis eos minus, delectus cum alias cumque quibusdam facilis! Temporibus ipsam excepturi vel doloribus quam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic dignissimos corrupti, architecto possimus odit aut iusto! Totam magnam ipsam, dolore, nobis rem eum voluptatum voluptas, accusamus repellat dolorum error saepe. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum error odit, magni hic eos maiores minima doloribus laudantium vero laborum nesciunt nisi architecto repellat exercitationem, sit ipsum dicta velit nam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, consequuntur earum in reiciendis doloribus sunt corporis ipsam facilis iste, omnis saepe. Mollitia sunt obcaecati quas quaerat delectus a voluptate aspernatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius pariatur expedita deserunt exercitationem delectus unde, dolor, voluptatum, dignissimos officiis suscipit id inventore. Porro perspiciatis rem, maiores dignissimos ab quas nam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam illo libero dignissimos mollitia hic impedit blanditiis eos minus, delectus cum alias cumque quibusdam facilis! Temporibus ipsam excepturi vel doloribus quam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic dignissimos corrupti, architecto possimus odit aut iusto! Totam magnam ipsam, dolore, nobis rem eum voluptatum voluptas, accusamus repellat dolorum error saepe. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum error odit, magni hic eos maiores minima doloribus laudantium vero laborum nesciunt nisi architecto repellat exercitationem, sit ipsum dicta velit nam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, consequuntur earum in reiciendis doloribus sunt corporis ipsam facilis iste, omnis saepe. Mollitia sunt obcaecati quas quaerat delectus a voluptate aspernatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius pariatur expedita deserunt exercitationem delectus unde, dolor, voluptatum, dignissimos officiis suscipit id inventore. Porro perspiciatis rem, maiores dignissimos ab quas nam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam illo libero dignissimos mollitia hic impedit blanditiis eos minus, delectus cum alias cumque quibusdam facilis! Temporibus ipsam excepturi vel doloribus quam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic dignissimos corrupti, architecto possimus odit aut iusto! Totam magnam ipsam, dolore, nobis rem eum voluptatum voluptas, accusamus repellat dolorum error saepe. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum error odit, magni hic eos maiores minima doloribus laudantium vero laborum nesciunt nisi architecto repellat exercitationem, sit ipsum dicta velit nam?</p>
+</body>
+</html>

@@ -1,0 +1,128 @@
+/* Aula sobre CSS Grid */
+
+/* O que é CSS Grid? */
+/* CSS Grid é um sistema de layout bidimensional que permite criar layouts complexos e responsivos de maneira simples e intuitiva. 
+Ele possibilita a organização de elementos em linhas e colunas, oferecendo um controle preciso sobre o posicionamento e alinhamento. */
+
+/* Ativando o Grid */
+/* Para usar CSS Grid, você precisa definir um contêiner como um grid usando 'display: grid'. */
+.container {
+    display: grid; /* Ativa o Grid Layout no contêiner */
+}
+
+/* Definindo Linhas e Colunas */
+/* Use 'grid-template-columns' e 'grid-template-rows' para definir o número e o tamanho das colunas e linhas. */
+.container {
+    grid-template-columns: 1fr 2fr 1fr; /* Três colunas: a primeira e a terceira ocupam 1 fração, a segunda ocupa 2 frações */
+    grid-template-rows: 100px auto 100px; /* Três linhas: a primeira e a terceira com 100 pixels, a segunda com tamanho automático */
+}
+
+/* gap: Define o espaço entre linhas e colunas */
+.container {
+    gap: 10px; /* Define um espaço de 10 pixels entre todas as linhas e colunas */
+    /* Você pode usar 'row-gap' e 'column-gap' para definir separadamente */
+    row-gap: 20px; /* Espaçamento entre linhas */
+    column-gap: 15px; /* Espaçamento entre colunas */
+}
+
+/* grid-template-areas: Permite criar áreas nomeadas na grade */
+.container {
+    grid-template-areas: 
+        "header header header"
+        "nav main aside"
+        "footer footer footer"; /* Define áreas nomeadas para facilitar a organização */
+}
+
+/* Definindo Posições dos Itens na Grade */
+/* Use 'grid-area' para atribuir um item a uma área nomeada ou especificar a posição e o tamanho do item na grade. */
+.header {
+    grid-area: header; /* Atribui o item à área nomeada 'header' */
+}
+
+.nav {
+    grid-area: nav; /* Atribui o item à área nomeada 'nav' */
+}
+
+.main {
+    grid-area: main; /* Atribui o item à área nomeada 'main' */
+}
+
+.aside {
+    grid-area: aside; /* Atribui o item à área nomeada 'aside' */
+}
+
+.footer {
+    grid-area: footer; /* Atribui o item à área nomeada 'footer' */
+}
+
+/* Definindo Posições Específicas com grid-column e grid-row */
+.item1 {
+    grid-column: 1 / 3; /* O item começa na coluna 1 e termina na coluna 3, ocupando duas colunas */
+    grid-row: 2 / 4; /* O item começa na linha 2 e termina na linha 4, ocupando duas linhas */
+}
+
+/* Auto-fill e Auto-fit */
+/* Use 'repeat()' com 'auto-fill' ou 'auto-fit' para criar grades responsivas. */
+.responsive-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Cria colunas que se ajustam automaticamente */
+}
+
+/* Alinhamento de Itens no Grid */
+/* Use 'justify-items' e 'align-items' para alinhar itens dentro de suas células. */
+.container {
+    justify-items: center; /* Alinha os itens no centro horizontalmente */
+    align-items: start; /* Alinha os itens no início verticalmente */
+}
+
+/* Alinhamento do Grid */
+.container {
+    justify-content: center; /* Alinha o grid no centro do contêiner horizontalmente */
+    align-content: center; /* Alinha o grid no centro do contêiner verticalmente */
+}
+
+/* Propriedade Shorthand */
+/* Use 'grid' como uma shorthand para 'grid-template-rows', 'grid-template-columns', 'grid-template-areas', 'grid-auto-rows', 'grid-auto-columns' e 'gap'. */
+.container {
+    grid: 
+        "header header header" 100px
+        "nav main aside" auto
+        "footer footer footer" 100px
+        / 1fr 2fr 1fr; /* Define as áreas nomeadas, as linhas e colunas e seus tamanhos, e o espaço entre elas */
+}
+
+/* Exemplo Prático Completo */
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Exemplo Completo</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 100px auto 100px;
+            grid-template-areas: 
+                "header header header"
+                "nav main aside"
+                "footer footer footer";
+            gap: 10px;
+        }
+        .header { grid-area: header; background-color: lightblue; }
+        .nav { grid-area: nav; background-color: lightgreen; }
+        .main { grid-area: main; background-color: lightcoral; }
+        .aside { grid-area: aside; background-color: lightgoldenrodyellow; }
+        .footer { grid-area: footer; background-color: lightgray; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="nav">Nav</div>
+        <div class="main">Main</div>
+        <div class="aside">Aside</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

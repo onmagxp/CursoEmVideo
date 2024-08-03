@@ -1,0 +1,79 @@
+/* Aula sobre @media em CSS */
+
+/* @media é usado para aplicar estilos diferentes com base nas características do dispositivo ou viewport. 
+Isso é essencial para criar layouts responsivos que se adaptam a diferentes tamanhos de tela. */
+
+/* Sintaxe básica do @media */
+@media (condição) {
+    /* Estilos aplicados quando a condição é verdadeira */
+}
+
+/* Exemplo: Aplicar estilos diferentes para telas com largura máxima de 768 pixels */
+@media (max-width: 768px) {
+    body {
+        background-color: lightblue; /* Muda a cor de fundo para azul claro em dispositivos móveis */
+    }
+}
+
+/* Exemplo: Aplicar estilos diferentes para telas com largura mínima de 769 pixels */
+@media (min-width: 769px) {
+    body {
+        background-color: lightgreen; /* Muda a cor de fundo para verde claro em dispositivos maiores */
+    }
+}
+
+/* Combinação de Condições: Você pode combinar várias condições usando operadores lógicos como 'and', 'not' e 'only'. */
+
+/* Exemplo: Aplicar estilos para telas entre 480px e 768px */
+@media (min-width: 480px) and (max-width: 768px) {
+    .container {
+        width: 100%; /* Aumenta a largura do contêiner para 100% em tablets */
+    }
+}
+
+/* Exemplo: Aplicar estilos para telas acima de 1200px */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px; /* Define uma largura máxima para grandes telas */
+    }
+}
+
+/* Exemplo: Aplicar estilos para orientação paisagem (landscape) */
+@media (orientation: landscape) {
+    .landscape {
+        display: block; /* Exibe elementos específicos para orientação paisagem */
+    }
+}
+
+/* Exemplo: Aplicar estilos para dispositivos de alta resolução (Retina) */
+@media (min-resolution: 192dpi) {
+    .retina {
+        background-image: url('image-highres.png'); /* Usa uma imagem de alta resolução */
+    }
+}
+
+/* Boas práticas:
+1. Utilize @media para garantir que seu layout funcione bem em diferentes tamanhos de tela e dispositivos.
+2. Comece projetando para o menor dispositivo primeiro (Mobile First) e adicione estilos para dispositivos maiores.
+3. Teste seu site em vários dispositivos para garantir que os estilos responsivos funcionem corretamente.
+*/
+
+/* Exemplo prático: Estilos responsivos para um layout básico */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padd

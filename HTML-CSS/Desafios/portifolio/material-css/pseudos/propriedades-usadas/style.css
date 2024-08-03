@@ -1,0 +1,106 @@
+/*
+Aula de CSS: Propriedades Comuns em Pseudo-classes e Pseudo-elementos
+
+É importante saber que muitas propriedades CSS podem ser aplicadas tanto em pseudo-classes quanto em pseudo-elementos. Vamos listar algumas das propriedades mais comuns que você pode usar:
+
+1. Color (cor) - Define a cor do texto.
+2. Background-color (cor de fundo) - Define a cor de fundo do elemento.
+3. Font-size (tamanho da fonte) - Define o tamanho do texto.
+4. Font-weight (peso da fonte) - Define a espessura do texto.
+5. Font-style (estilo da fonte) - Define o estilo do texto (normal, itálico, etc.).
+6. Text-decoration (decoração do texto) - Adiciona sublinhado, sobrelinhado, etc.
+7. Text-transform (transformação do texto) - Converte o texto para maiúsculas, minúsculas, etc.
+8. Line-height (altura da linha) - Define a altura das linhas de texto.
+9. Margin (margem) - Define o espaço ao redor do elemento.
+10. Padding (preenchimento) - Define o espaço interno do elemento.
+11. Border (borda) - Adiciona bordas ao elemento.
+12. Display (exibição) - Define o comportamento de exibição do elemento (block, inline, etc.).
+13. Float (flutuação) - Define se o elemento deve flutuar à esquerda ou à direita.
+14. Content (conteúdo) - Adiciona conteúdo gerado nos pseudo-elementos ::before e ::after.
+
+Vamos ver exemplos práticos para entender melhor como essas propriedades podem ser usadas.
+
+1. Propriedades comuns em pseudo-classes:
+
+:hover {
+    color: white; /* Muda a cor do texto */
+    background-color: black; /* Muda a cor de fundo */
+    font-size: 18px; /* Define o tamanho da fonte */
+    font-weight: bold; /* Define o peso da fonte */
+    text-decoration: underline; /* Adiciona sublinhado */
+    /* Outras propriedades: text-transform, line-height, margin, padding, border, display, float */
+}
+
+/*
+2. Propriedades comuns em pseudo-elementos:
+*/
+
+p::after {
+    content: " - Leia mais"; /* Adiciona conteúdo */
+    color: blue; /* Muda a cor do texto */
+    background-color: lightgray; /* Muda a cor de fundo */
+    font-size: 14px; /* Define o tamanho da fonte */
+    font-weight: normal; /* Define o peso da fonte */
+    text-decoration: none; /* Remove decoração do texto */
+    /* Outras propriedades: text-transform, line-height, margin, padding, border, display, float */
+}
+
+/*
+Explicação adicional sobre :nth-child(n) e :nth-of-type(n):
+
+- :nth-child(n): Aplica o estilo ao enésimo filho de qualquer tipo. "n" pode ser um número, uma palavra-chave (odd para ímpares, even para pares), ou uma fórmula (2n para cada segundo filho).
+
+Exemplo:
+*/
+
+ul li:nth-child(2) {
+    background-color: yellow; /* Muda a cor de fundo do segundo <li> */
+}
+
+/*
+- :nth-of-type(n): Aplica o estilo ao enésimo filho de um tipo específico. "n" pode ser um número, uma palavra-chave (odd para ímpares, even para pares), ou uma fórmula (2n para cada segundo filho de um tipo).
+
+Exemplo:
+*/
+
+p:nth-of-type(3) {
+    color: green; /* Muda a cor do texto do terceiro <p> */
+}
+
+/*
+- :last-of-type: Aplica o estilo ao último filho de um tipo específico.
+
+Exemplo:
+*/
+
+div:last-of-type {
+    border: 2px solid red; /* Adiciona uma borda ao último <div> */
+}
+
+/*
+Shorthands:
+Shorthands são formas abreviadas de escrever várias propriedades em uma única linha.
+
+Exemplo de shorthand para margin e padding:
+*/
+
+.box {
+    margin: 10px 20px 30px 40px; /* Top, right, bottom, left */
+    padding: 10px 20px; /* Top/bottom, right/left */
+}
+
+/* 
+Exemplo de shorthand para border:
+*/
+
+.box {
+    border: 2px solid blue; /* Largura, estilo, cor */
+}
+
+/*
+Conclusão:
+Nesta aula, exploramos pseudo-classes e pseudo-elementos, vimos exemplos práticos e aprendemos sobre propriedades comuns e shorthands. Compreender esses conceitos é essencial para criar estilos dinâmicos e interativos em suas páginas web.
+
+Fim da aula sobre propriedades comuns e shorthands em pseudo-classes e pseudo-elementos.
+*/
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela02</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .table-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        thead th, .tfoots {
+            border: 1px solid white;
+            background-color: rgba(0, 0, 0, 0.94);
+            color: white;
+            text-align: center;
+            height: 30px;
+        }
+
+        tbody td{
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        tbody tr:nth-child(2n) {
+            background: rgba(128, 128, 128, 0.677);
+        }
+
+    </style>
+</head>
+<body>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>C</th>
+                        <th>D</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">1</td>
+                        <td colspan="2">2</td>
+
+                        <td rowspan="2">4</td>
+                    </tr>
+                    <tr>
+
+                        <td>6</td>
+                        <td>7</td>
+
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td colspan="2">14</td>
+
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td rowspan="2">20</td>
+                    </tr>
+                    <tr>
+
+                        <td>22</td>
+                        <td>23</td>
+
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="2" class="tfoots">E</th>
+                        <td colspan="2" class="tfoots">F</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+</body>
+</html>

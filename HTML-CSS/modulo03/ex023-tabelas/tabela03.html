@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        table {
+            width: 400px;
+            background-color: lightgray;
+            border-collapse: collapse;
+        }
+
+        table td {
+            border: 1px solid black;
+        }
+
+        table td:nth-child(2n) {
+            background-color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    colspan: Se usa para ocupar mais de uma coluna. (Obs: Colunas são Verticais.)
+    rowspan: Se usa para ocupar mais de uma Linha (Obs: Linhas são Horizontais.)
+    -->
+    <h1>Mesclagem de Células</h1>
+    <table>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td>
+            <td>D</td>             
+        </tr>
+        <tr>
+            <td>E</td>
+            <td>F</td>
+            <td>G</td>
+            <td>H</td>
+        </tr>
+        <tr>
+            <td rowspan="2">I</td>
+            <td colspan="2">J</td>
+
+            <td rowspan="2">L</td>
+        </tr>
+        <tr>
+            <td>N</td>
+            <td>O</td>
+        </tr>
+    </table>
+</body>
+</html>

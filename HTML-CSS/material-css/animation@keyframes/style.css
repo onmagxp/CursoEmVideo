@@ -1,0 +1,237 @@
+/*
+Aula de CSS: Animações e Keyframes
+
+As animações em CSS permitem criar efeitos dinâmicos e visuais nos elementos HTML. Usamos a propriedade `animation` e as regras `@keyframes` para definir esses efeitos.
+
+1. @keyframes:
+Define os estados da animação em diferentes pontos (keyframes) durante a duração da animação. Podemos usar várias propriedades CSS dentro dos keyframes.
+
+2. Propriedades de Animação:
+Vamos explorar cada propriedade de animação e como usá-las para criar efeitos incríveis.
+
+Vamos ver como cada uma dessas propriedades e técnicas funciona.
+
+1. @keyframes
+Define os estados da animação em diferentes pontos durante a duração da animação.
+
+Exemplo:
+*/
+
+@keyframes example {
+    0% { transform: translateX(0); } /* Estado inicial */
+    50% { transform: translateX(50px); } /* Meio da animação */
+    100% { transform: translateX(0); } /* Estado final */
+}
+
+/*
+Propriedades que podem ser usadas em keyframes:
+- transform: aplica transformações como translate, scale, rotate, skew.
+- opacity: altera a opacidade do elemento.
+- background-color: altera a cor de fundo.
+- width, height: altera a largura e altura.
+- top, left, right, bottom: altera a posição.
+- margin, padding: altera as margens e preenchimentos.
+- color: altera a cor do texto.
+- border: altera a borda.
+
+2. Propriedades de Animação
+Vamos entender as propriedades que podemos usar com animações.
+
+2.1. animation-name
+Define o nome da animação a ser aplicada ao elemento.
+
+Exemplo:
+*/
+
+.div1 {
+    animation-name: example; /* Usa a animação "example" */
+}
+
+/*
+Você pode criar e usar qualquer nome de animação que desejar, desde que corresponda a um conjunto de keyframes definido com @keyframes. A seguir, alguns exemplos comuns:
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-30px); }
+    60% { transform: translateY(-15px); }
+}
+
+@keyframes move {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(100px); }
+}
+
+@keyframes complexAnimation {
+    0% { opacity: 0; transform: scale(0); }
+    50% { opacity: 1; transform: scale(1.5); }
+    100% { opacity: 0; transform: scale(1); }
+}
+
+Explicação:
+- `animation-name` usa o nome definido em `@keyframes` para aplicar a animação ao elemento.
+- Você pode criar nomes personalizados para suas animações, como "bounce", "move", "complexAnimation" etc.
+
+2.2. animation-duration
+Define a duração da animação.
+
+Exemplo:
+*/
+
+.div2 {
+    animation-name: example;
+    animation-duration: 4s; /* Duração de 4 segundos */
+}
+
+/*
+2.3. animation-timing-function
+Define a velocidade da curva da animação.
+
+Exemplo:
+*/
+
+.div3 {
+    animation-name: example;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out; /* Velocidade acelerada no início e no final */
+}
+
+/*
+Valores comuns:
+- ease: padrão, movimento suave.
+- linear: velocidade constante.
+- ease-in: começa devagar.
+- ease-out: termina devagar.
+- ease-in-out: devagar no início e no final.
+- steps(int, [start|end]): divide a animação em etapas.
+
+2.4. animation-delay
+Define o tempo de espera antes de iniciar a animação.
+
+Exemplo:
+*/
+
+.div4 {
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 2s; /* Espera 2 segundos antes de começar */
+}
+
+/*
+2.5. animation-iteration-count
+Define quantas vezes a animação será repetida.
+
+Exemplo:
+*/
+
+.div5 {
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; /* Repetição infinita */
+}
+
+/*
+2.6. animation-direction
+Define a direção da animação.
+
+Exemplo:
+*/
+
+.div6 {
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; /* Alterna a direção a cada ciclo */
+}
+
+/*
+Valores comuns:
+- normal: direção padrão.
+- reverse: direção reversa.
+- alternate: alterna a direção.
+- alternate-reverse: alterna a direção começando em reverso.
+
+2.7. animation-fill-mode
+Define como o estilo aplicado à animação será mantido fora do ciclo da animação.
+
+Exemplo:
+*/
+
+.div7 {
+    animation-name: example;
+    animation-duration: 4s;
+    animation-fill-mode: forwards; /* Mantém o estilo do último keyframe */
+}
+
+/*
+Valores comuns:
+- none: sem estilo aplicado fora do ciclo.
+- forwards: mantém o estilo do último keyframe.
+- backwards: aplica o estilo do primeiro keyframe antes de iniciar.
+- both: aplica forwards e backwards.
+
+2.8. animation-play-state
+Controla se a animação está em execução ou pausada.
+
+Exemplo:
+*/
+
+.div8 {
+    animation-name: example;
+    animation-duration: 4s;
+    animation-play-state: paused; /* Pausa a animação */
+}
+
+/*
+Valores comuns:
+- running: a animação está em execução.
+- paused: a animação está pausada.
+
+2.9. animation-shorthand
+Podemos usar a shorthand `animation` para definir várias propriedades em uma única linha.
+
+Exemplo:
+*/
+
+.div9 {
+    animation: example 4s ease-in-out 2s infinite alternate forwards;
+    /* animation-name: example */
+    /* animation-duration: 4s */
+    /* animation-timing-function: ease-in-out */
+    /* animation-delay: 2s */
+    /* animation-iteration-count: infinite */
+    /* animation-direction: alternate */
+    /* animation-fill-mode: forwards */
+}
+
+/*
+Explicação:
+- A shorthand `animation` permite definir todas as propriedades em uma única linha, economizando tempo e código.
+
+Exemplo Completo:
+Vamos ver um exemplo completo que usa todas essas propriedades para criar uma animação sofisticada.
+*/
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-30px); }
+    60% { transform: translateY(-15px); }
+}
+
+.bounce {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: bounce 2s ease infinite alternate;
+    /* animation-name: bounce */
+    /* animation-duration: 2s */
+    /* animation-timing-function: ease */
+    /* animation-iteration-count: infinite */
+    /* animation-direction: alternate */
+}
+
+/*
+Conclusão:
+Nesta aula, exploramos as animações e keyframes no CSS. Vimos como definir animações usando `@keyframes` e como aplicar várias propriedades de animação para criar efeitos visuais dinâmicos. Com esses conceitos, você pode criar animações impressionantes e interativas em suas páginas web.
+
+Fim da aula sobre animações e keyframes.
+*/

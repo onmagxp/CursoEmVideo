@@ -1,0 +1,23 @@
+Descrição:
+
+preciso de um resumo do resumo bem didático sobre PSEUDO-CLASSES e PSEUDO-ELEMENTOS:
+
+como são representadas dentro do HTML5 e CSS3?
+
+o que é div e qual sua ligação com elas?
+
+quais são as mais utilizadas das pseudo-classes e pseudo-elementos dentro do HTML e CSS, pra que servem e qual a tradução para português de cada uma?
+
+o que é display e liste alguns mais usados e suas traduções para portugues?
+
+como esconder um <p> dentro de uma <div>, como é feito isso dentro do CSS3?
+ 
+obs só para ficar ciente:
+pseudo-classes:
+SELETORES PERSONALIZADOS
+# = id
+. = class
+: = pseudo-class
+:: = pseudo-elementos
+> = children (ex: div > p {})
+ 

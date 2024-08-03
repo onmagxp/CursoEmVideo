@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo fixo de Tela</title>
+    <style>
+        body {
+            background-color: black;
+            background-image: url('modulo03/ex022/imagens-cap19/wallpaper002.jpg');
+            background-position: center top;
+            background-repeat: no-repeat; /*repeat/ no-repeat/ repeat-x/ repeat-Y*/
+            background-size: cover; /*opções: px, %, auto, contain, cover(mais indicado pois não distorce e nem adiciona margens)*/
+            background-attachment: fixed;
+            height: 100dvh;
+
+
+            /*shorthand Background:*/
+            /*background: color > image > position > repeat > [size] > attachment*/
+            /*o bakcground size por mais que seja parte da shorthand não funciona pois os navegadores não conseguem ler ele em shorthand, logo a opção certa é adicioná-lo separadamente.*/
+            /*
+            ou seja:
+            background: black url('modulo03/ex022/imagens-cap19/wallpaper002.jpg') center top no-repeat fixed;
+            background-size: cover;
+            */
+        }
+        main {
+            background-color: whitesmoke;
+            margin: auto;
+            height: auto;
+            max-width: 300px;
+            border: 2px solid blueviolet;
+            padding: 10px;
+        }
+
+        main h1 {
+            text-align: center;
+        }
+
+        main p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit necessitatibus earum nam inventore exercitationem quis distinctio asperiores eligendi iusto, quam odio tenetur dignissimos neque deleniti blanditiis, eum nesciunt quisquam maxime.!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quaerat adipisci nobis ea, magnam aliquid dolorem rem quibusdam impedit. Tempora rerum iste vitae tempore facilis nostrum commodi laborum optio eum.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos dolore nemo incidunt provident eligendi nesciunt voluptates quisquam porro, aperiam debitis quasi, excepturi dignissimos sint similique nisi totam at fuga. Libero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, molestias odio vitae libero neque aliquam veritatis pariatur numquam, aspernatur quae est voluptatum non ullam aliquid aperiam deserunt id debitis in! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus officia porro molestiae. Corrupti facere optio velit delectus. Fugit dolore sed similique aspernatur, dolor recusandae maiores voluptatem esse, facere quia dolorem!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos dolore nemo incidunt provident eligendi nesciunt voluptates quisquam porro, aperiam debitis quasi, excepturi dignissimos sint similique nisi totam at fuga. Libero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, molestias odio vitae libero neque aliquam veritatis pariatur numquam, aspernatur quae est voluptatum non ullam aliquid aperiam deserunt id debitis in! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus officia porro molestiae. Corrupti facere optio velit delectus. Fugit dolore sed similique aspernatur, dolor recusandae maiores voluptatem esse, facere quia dolorem!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos dolore nemo incidunt provident eligendi nesciunt voluptates quisquam porro, aperiam debitis quasi, excepturi dignissimos sint similique nisi totam at fuga. Libero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, molestias odio vitae libero neque aliquam veritatis pariatur numquam, aspernatur quae est voluptatum non ullam aliquid aperiam deserunt id debitis in! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus officia porro molestiae. Corrupti facere optio velit delectus. Fugit dolore sed similique aspernatur, dolor recusandae maiores voluptatem esse, facere quia dolorem!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos dolore nemo incidunt provident eligendi nesciunt voluptates quisquam porro, aperiam debitis quasi, excepturi dignissimos sint similique nisi totam at fuga. Libero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, molestias odio vitae libero neque aliquam veritatis pariatur numquam, aspernatur quae est voluptatum non ullam aliquid aperiam deserunt id debitis in! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus officia porro molestiae. Corrupti facere optio velit delectus. Fugit dolore sed similique aspernatur, dolor recusandae maiores voluptatem esse, facere quia dolorem!</p>
+    </main>
+</body>
+</html>

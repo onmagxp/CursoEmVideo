@@ -1,0 +1,366 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'GrandSlang-B-Side';
+    src: url(fontes/GrandSlang-B-Side/GrandSlang-B-Side.ttf) format('Opentype');
+}
+
+@font-face {
+    font-family: 'Migra';
+    src: url(fontes/migra-free-for-personal-use-112fba51-8558-4c40-934f-a48b2e8476e9/Migra\ -\ Free\ for\ Personal\ Use/) format('Opentype');
+}
+:root {
+    --font-C-T: 'Montserrat', sans-serif;
+    --font-corpo: 'Roboto', sans-serif;
+    --font-hero: 'GrandSlang-B-Side';
+    --font-migra: 'Migra';
+    --color-eerie-black: #1e2125ff;
+    --color-onyx: #323539ff;
+    --color-outer-space: #45474bff;
+    --color-bone: #e9dfceff;
+    --color-bone2: #E6DCCB;
+    --color-antiflash-white: #f0f0f0ff;
+    --color-white: #ffffffff;
+    --color-black: #000000ff;
+}
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-eerie-black);
+    font-size: 16px;
+    line-height: 1.5;
+    
+}
+
+header {
+    display: flex;
+    height: auto;
+    width: 100%;
+    background-color: transparent;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    height: auto;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex: 1 1 auto;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li { 
+    padding: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: var(--font-C-T);
+    font-size: .6em;
+    color: var(--color-antiflash-white);
+}
+
+nav a:hover {
+    color: var(--color-bone2);
+    text-shadow: 0px 0px 2px var(--color-onyx);
+}
+
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    flex: 1 1 auto;
+    font-family: var(--font-C-T);
+    height: 100vh;
+    max-width: 100%;
+    padding: 20px;
+}
+
+.hero-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    flex: 1 1 auto;
+    height: auto;
+    max-width: 100%;
+    text-align: center;
+    line-height: 1;
+}
+
+.textopequeno {
+    color: var(--color-bone);
+    text-align: center;
+    font-family: var(--font-C-T);
+    font-size: 1.5vw;
+}
+.destaque-texto {
+    font-size: 10vw;
+    text-align: center;
+    font-family: var(--font-hero);
+    color: var(--color-bone);
+}
+
+.experiences {
+    font-size: 6vw;
+    line-height: .7;
+    font-family: var(--font-hero);
+    color: var(--color-bone);
+}
+
+.foryou {
+    font-size: 3vw;
+    font-family: var(--font-migra);
+    color: var(--color-bone);
+    padding-top: 5vh;
+
+}
+
+.business {
+    font-size: 5vw;
+    font-family: var(--font-migra);
+    color: var(--color-bone);
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    height: 100vh;
+}
+
+.about-texto {
+    flex: 1 1 40%;
+    text-align: center;
+}
+.about-texto h1 {
+    color: var(--color-bone2);
+    font-family: var(--font-C-T);
+    font-size: 3em;
+}
+
+.about-texto p {
+    color: var(--color-bone2);
+    font-family: var(--font-C-T);
+    font-size: 1em;
+    padding-top: 10px;
+}
+
+.about-imagem {
+    display: flex;
+    justify-content: center;
+    flex: 1 1 40%;
+}
+
+.about-imagem img {
+    width: auto;
+    max-width: auto;
+    height: auto;
+    max-height: 350px;
+    box-shadow: 0 0 5px rgba(69, 71, 75, 0.471);
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    height: 150vh;
+}
+
+.projeto-texto h2 {
+    text-align: center; /* Centraliza o texto do título */
+    margin-bottom: 20px; /* Espaçamento inferior do título */
+    color: var(--color-bone2);
+    font-family: var(--font-C-T);
+    font-size: 3em;
+}
+
+.projeto {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding: 10px;
+}
+
+.projeto1 {
+    display: flex;
+    flex: 1 1 45%;
+    min-width: 300px;
+    flex-flow: row wrap;
+    background-color: rgba(0, 0, 0, 0.236);
+    padding: 15px;
+    border: .5px solid var(--color-black);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.566);
+}
+
+.projeto2 {
+    display: flex;
+    flex: 1 1 45%;
+    min-width: 300px;
+    flex-flow: row wrap;
+    background-color: rgba(0, 0, 0, 0.236);
+    padding: 15px;
+    border: .5px solid var(--color-black);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.566);
+}
+
+.projeto h3 {
+    color: var(--color-bone2);
+    text-align: center;
+    margin: 0 auto;
+    font-variant: small-caps;
+    font-family: var(--font-C-T);
+}
+
+.projects-container article p {
+    padding-top: 20px;
+    text-align: center;
+    color: var(--color-bone2);
+    font-family: var(--font-corpo); 
+}
+
+.projects-container article a {
+    color: var(--color-antiflash-white);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: var(--font-corpo);
+}
+
+.projects-container article a:hover {
+    text-decoration: underline;
+}
+
+.projects-container article img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.contact-container {
+    height: 100vh;
+}
+
+.contact-section {
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.229);
+    box-shadow: 0 0 5px rgba(240, 240, 240, 0.16);
+    border-radius: 10px;
+    display: flex; 
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Título do formulário */
+.contact-container h2 {
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    font-family: var(--font-C-T); /* Fonte para o título */
+    color: var(--color-bone); /* Cor do texto */
+    font-size: 3em;
+}
+
+/* Estilos dos labels */
+.contact-container label {
+    display: block; /* Exibe o label como um bloco */
+    margin-bottom: 5px; /* Espaçamento abaixo do label */
+    font-family: var(--font-C-T); /* Fonte para os labels */
+    color: var(--color-antiflash-white); /* Cor do texto */
+}
+
+/* Container para inputs e textarea */
+.contact-container .input-group {
+    display: flex; /* Define o display como flex */
+    flex-direction: column; /* Organiza os itens em coluna */
+}
+
+/* Estilos dos inputs e textarea */
+.contact-container input, 
+.contact-container textarea {
+    width: 100%; /* Largura total do container pai */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-family: var(--font-corpo); /* Fonte para os campos */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #212121; /* Cor do texto */
+    box-sizing: border-box; /* Inclui o padding e a borda no tamanho total */
+}
+
+/* Estilo do botão de envio */
+.contact-container button {
+    padding: 10px; /* Espaçamento interno */
+    background-color: #E6DCCB; /* Cor de fundo verde */
+    color: var(--color-onyx); /* Cor do texto branco */
+    border: none; /* Remove borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-family: 'Montserrat', sans-serif; /* Fonte para o botão */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold;
+    cursor: pointer; /* Cursor de ponteiro ao passar sobre o botão */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+/* Efeito de hover para o botão */
+.contact-container button:hover {
+    background-color: #cac0af; /* Cor de fundo ao passar o mouse */
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50px;
+    padding-top: 20ox;
+    background-color: rgba(0, 0, 0, 0.225);
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+footer p, a {
+    color: var(--color-antiflash-white);
+}
+footer p {
+    padding-top: 10px;
+    font-size: .8em;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 1em;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

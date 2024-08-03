@@ -1,0 +1,36 @@
+.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}
+
+body {
+  		-webkit-font-smoothing: antialiased;
+  		-moz-osx-font-smoothing: grayscale;
+	}
+
+html, body { overscroll-behavior: none; }
+
+.cursor-wrap,.work-num,.certificate-img,.work-top-img,.radio-txt {
+pointer-events: none;
+}
+body:hover .cursor-wrap {
+	opacity: 1.0;
+}
+
+@media only screen and (min-width: 1600px) {
+     body {font-size: 16px;}
+}
+
+@media only screen and (min-width: 1200px) {
+     .p2 {font-size: 15px;}
+     .awards-item {font-size: 20px;}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1600px)  {
+     .p {font-size: 15px;}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1400px) {
+     .p20 {font-size: 17px;}
+}
+
+.cursor-wrap{
+pointer-events: none;
+}

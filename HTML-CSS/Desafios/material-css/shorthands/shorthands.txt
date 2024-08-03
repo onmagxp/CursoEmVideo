@@ -1,0 +1,177 @@
+/* 1. margin
+   Define as margens externas de um elemento. */
+
+/* Individual */
+margin-top: 10px;
+margin-right: 15px;
+margin-bottom: 10px;
+margin-left: 15px;
+
+/* Shorthand */
+margin: 10px 15px; /* cima/baixo esquerda/direita */
+
+
+/* 2. padding
+   Define o espaçamento interno de um elemento. */
+
+/* Individual */
+padding-top: 10px;
+padding-right: 15px;
+padding-bottom: 10px;
+padding-left: 15px;
+
+/* Shorthand */
+padding: 10px 15px; /* cima/baixo esquerda/direita */
+
+
+/* 3. border
+   Define a largura, estilo e cor da borda de um elemento. */
+
+/* Individual */
+border-width: 2px;
+border-style: solid;
+border-color: red;
+
+/* Shorthand */
+border: 2px solid red;
+
+
+/* 4. background
+   Define várias propriedades de fundo de um elemento. */
+
+/* Individual */
+background-color: blue;
+background-image: url('imagem.jpg');
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+
+/* Shorthand */
+background: blue url('imagem.jpg') no-repeat center/cover;
+
+
+/* 5. font
+   Define várias propriedades de fonte de um elemento. */
+
+/* Individual */
+font-style: italic;
+font-variant: small-caps;
+font-weight: bold;
+font-size: 16px;
+line-height: 1.5;
+font-family: Arial, sans-serif;
+
+/* Shorthand */
+font: italic small-caps bold 16px/1.5 Arial, sans-serif;
+
+
+/* 6. list-style
+   Define várias propriedades de estilo de lista de um elemento. */
+
+/* Individual */
+list-style-type: square;
+list-style-position: inside;
+list-style-image: url('imagem.png');
+
+/* Shorthand */
+list-style: square inside url('imagem.png');
+
+
+/* 7. flex
+   Define várias propriedades de um item flexível em um contêiner flexível. */
+
+/* Individual */
+flex-grow: 1; /*Define a capacidade do item de crescer.*/
+flex-shrink: 1; /*Define a capacidade do item de encolher.*/
+flex-basis: auto; /*Define o tamanho inicial do item antes da distribuição do espaço disponível.*/
+
+/* Shorthand */
+flex: 1 1 auto;
+
+
+/* 8. grid (rows, columns, grid-gap)
+   Define várias propriedades de um item de grade em um contêiner de grade. */
+
+/* Individual */
+grid-template-rows: 100px auto; /* Define as linhas da grade*/
+grid-template-columns: 1fr 2fr; /* Define as colunas da grade.*/
+grid-gap: 10px; /* Define o espaçamento entre as linhas e colunas em um contêiner de grade.*/
+
+/* Shorthand */
+grid: 100px auto / 1fr 2fr;
+
+
+/*8.1. grid-gap
+   Define o espaçamento entre as linhas e colunas em um contêiner de grade. */
+
+/* Descrição dos valores:
+   - row-gap: Espaçamento entre as linhas da grade.
+   - column-gap: Espaçamento entre as colunas da grade. */
+
+   /* Sintaxe shorthand */
+grid-gap: row-gap column-gap;
+grid-gap: 20px 10px; /* 20px de espaçamento entre linhas, 10px entre colunas */
+
+/* Nota:
+   - Se apenas um valor for fornecido, ele será aplicado tanto às linhas quanto às colunas.
+   - É possível utilizar `gap` como shorthand de `grid-gap`, compatível com layouts de grade e flex. */
+
+
+/* 9. transition
+   Define várias propriedades de transição para um elemento. */
+
+/* Individual */
+transition-property: background-color; /*A propriedade CSS que será animada.*/
+transition-duration: 0.5s; /*A duração da transição.*/
+transition-timing-function: ease-in-out; /*A função de temporização da transição.*/
+transition-delay: 0.1s; /*O atraso antes do início da transição.*/
+
+/* Shorthand */
+transition: background-color 0.5s ease-in-out 0.1s;
+
+
+/* 10. box-shadow
+   A propriedade box-shadow adiciona sombras em volta de um elemento. */
+
+/* Individual */
+box-shadow: 10px; /* offset-x - Deslocamento horizontal da sombra. Valores positivos movem a sombra para a direita, negativos para a esquerda.*/
+box-shadow: 5px;  /* offset-y - Deslocamento vertical da sombra. Valores positivos movem a sombra para baixo, negativos para cima.*/
+box-shadow: 5px;  /* blur-radius - O desfoque da sombra. Quanto maior o valor, mais difusa será a sombra.*/
+box-shadow: 2px;  /* spread-radius - A expansão da sombra. Valores positivos aumentam o tamanho da sombra, valores negativos a reduzem.*/
+box-shadow: rgba(0, 0, 0, 0.5); /* color */
+
+/* Shorthand */
+box-shadow: 10px 5px 5px 2px rgba(0, 0, 0, 0.5);
+
+
+/* 11. text-shadow
+   A propriedade text-shadow adiciona sombra ao redor do texto. */
+
+/* offset-x - Deslocamento horizontal da sombra. Valores positivos movem a sombra para a direita, negativos para a esquerda. */
+text-shadow: 2px;
+
+/* offset-y - Deslocamento vertical da sombra. Valores positivos movem a sombra para baixo, negativos para cima. */
+text-shadow: 2px;
+
+/* blur-radius - O desfoque da sombra. Quanto maior o valor, mais difusa será a sombra. */
+text-shadow: 5px;
+
+/* color - Cor da sombra. */
+text-shadow: rgba(0, 0, 0, 0.5);
+
+/* Shorthand */
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+
+/* 12. border-radius
+   A propriedade border-radius arredonda os cantos de um elemento. */
+
+/* Individual */
+border-top-left-radius: 10px;    /* Arredonda o canto superior esquerdo. */
+border-top-right-radius: 10px;   /* Arredonda o canto superior direito. */
+border-bottom-right-radius: 10px; /* Arredonda o canto inferior direito. */
+border-bottom-left-radius: 10px;  /* Arredonda o canto inferior esquerdo. */
+
+/* Shorthand */
+border-radius: 10px 10px 10px 10px; /* Define o raio de todos os cantos de uma vez, na ordem: superior esquerdo, superior direito, inferior direito, inferior esquerdo. */
+

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Text Overflow</title>
+    <style>
+        .text-container {
+            width: 200px;
+            white-space: nowrap; /* Impede a quebra de linha */
+            overflow: hidden; /* Oculta o texto que excede o contêiner */
+            text-overflow: ellipsis; /* Adiciona "..." ao texto que excede */
+            border: 1px solid #333;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="text-container">
+        Este é um texto muito longo que não cabe na largura do contêiner.
+    </div>
+</body>
+</html>

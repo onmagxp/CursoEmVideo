@@ -1,0 +1,143 @@
+/* Aula de Transformações CSS */
+
+/* Container para os exemplos */
+.example-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+/* Estilo base para os elementos transformados */
+.example {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: lightblue;
+    border: 2px solid blue;
+    text-align: center;
+    line-height: 100px;
+    transition: transform 0.5s; /* Para ver a transformação de forma suave */
+}
+
+/* Transformação de Translação (Mover)
+   Move o elemento de sua posição original. */
+.translate-example {
+    transform: translate(50px, 100px); /* Move 50px para a direita e 100px para baixo */
+}
+
+/* Transformação de Rotação (Girar)
+   Gira o elemento em torno do seu centro. */
+.rotate-example {
+    transform: rotate(45deg); /* Rotaciona 45 graus no sentido horário */
+}
+
+/* Transformação de Escala (Aumentar ou Diminuir)
+   Altera o tamanho do elemento. */
+.scale-example {
+    transform: scale(1.5); /* Aumenta 1.5 vezes o tamanho original */
+}
+
+/* Transformação de Inclinação (Skew)
+   Inclina o elemento horizontalmente e/ou verticalmente. */
+.skew-example {
+    transform: skew(20deg, 10deg); /* Inclina 20 graus horizontalmente e 10 graus verticalmente */
+}
+
+/* Transformação de Perspectiva e Rotação 3D
+   Adiciona profundidade e rotaciona o elemento em 3D. */
+.perspective-rotate-example {
+    transform: perspective(200px) rotateY(45deg); /* Aplica perspectiva 3D e rotaciona 45 graus no eixo Y */
+}
+
+/* Shorthand para Múltiplas Transformações
+   Combina várias transformações. */
+.multiple-example {
+    transform: translate(30px, 50px) rotate(30deg) scale(1.2); /* Move, rotaciona e aumenta o elemento */
+}
+
+/* Exemplo para visualizar as transformações */
+.example-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.example {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: lightblue;
+    border: 2px solid blue;
+    text-align: center;
+    line-height: 100px;
+    transition: transform 0.5s; /* Para ver a transformação de forma suave */
+}
+
+/* Exemplo de Translação */
+.translate-example {
+    transform: translate(50px, 100px); /* Move 50px para a direita e 100px para baixo */
+}
+
+/* Exemplo de Rotação */
+.rotate-example {
+    transform: rotate(45deg); /* Rotaciona 45 graus no sentido horário */
+}
+
+/* Exemplo de Escala */
+.scale-example {
+    transform: scale(1.5); /* Aumenta 1.5 vezes o tamanho original */
+}
+
+/* Exemplo de Inclinação */
+.skew-example {
+    transform: skew(20deg, 10deg); /* Inclina 20 graus horizontalmente e 10 graus verticalmente */
+}
+
+/* Exemplo de Perspectiva e Rotação 3D */
+.perspective-rotate-example {
+    transform: perspective(200px) rotateY(45deg); /* Aplica perspectiva 3D e rotaciona 45 graus no eixo Y */
+}
+
+/* Exemplo de Múltiplas Transformações */
+.multiple-example {
+    transform: translate(30px, 50px) rotate(30deg) scale(1.2); /* Move, rotaciona e aumenta o elemento */
+}
+
+
+/*Explicação Simples:
+Translação (translate):
+
+Move o elemento de sua posição original.
+Exemplo: transform: translate(50px, 100px);
+
+
+Rotação (rotate):
+
+Gira o elemento em torno do seu centro.
+Exemplo: transform: rotate(45deg);
+
+
+Escala (scale):
+
+Aumenta ou diminui o tamanho do elemento.
+Exemplo: transform: scale(1.5);
+
+
+Inclinação (skew):
+
+Inclina o elemento horizontalmente e/ou verticalmente.
+Exemplo: transform: skew(20deg, 10deg);
+
+
+Perspectiva e Rotação 3D:
+
+Adiciona profundidade e rotaciona o elemento em 3D.
+Exemplo: transform: perspective(200px) rotateY(45deg);
+
+
+Múltiplas Transformações:
+
+Combina várias transformações.
+Exemplo: transform: translate(30px, 50px) rotate(30deg) scale(1.2);*/

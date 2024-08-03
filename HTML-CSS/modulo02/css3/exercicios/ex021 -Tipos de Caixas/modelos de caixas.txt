@@ -1,0 +1,85 @@
+modelos de caixas:
+Anatomia:
+
+height: altura
+width: largura
+border;
+padding: Espaço entre o conteúdo e a borda (espaço interno).
+margin: Espaço fora da borda (espaço externo).
+outline: Espaço entre a border e a margin (chamado de contorno ou traçado).
+
+ShortHands - Border
+Exemplo:
+border-width: 10px;
+border-style: solid;
+border color: #fff;
+
+Simplificado
+border: 10px solid #fff; 
+
+ShortHands - Padding
+Exemplo:
+padding-top: 10px;
+padding-right: 10px;
+padding-bottom: 10px;
+padding-left: 10px;
+
+Simplicado:
+padding: 10px 10px 10px 10px;
+
+Observação: Todos ShortHands com 4 valores é no sentido-horário como nos exemplos acima.
+Quando se faz só de 2 valores se refere a em cima e em baixo, ou seja, só altera o top e o bottom.
+Exemplo: padding: 10px 10px; (vai alterar somente em cima e em baixo e manter os lados.)
+
+Tipos de Caixa
+
+box-level: É independente, quebra o conteúdo para a linha próxima linha, utiliza a largura total da tela e se adapta a todas larguras.
+
+inline-level: Não quebra o conteúdo para a próxima linha, ele apenas cria a caixa envolta e o conteúdo continua na mesma linha.
+
+tipos de tags box-level:
+'div': é o mais utilizado
+<div>
+<h1> - <h6>
+<p>
+<main>
+<header>
+<nav>
+<article>
+<footer>
+<form>
+<video>
+
+tipos de tag inline-box:
+'span' mais utilizado
+<span>
+<a>
+<code>
+<small>
+<strong>
+<em>
+<sup> - <sub>
+<label>
+<button>
+<input>
+<select>
+
+
+ao inspecionar F12 em Elementos tem a seguinte ao informação:
+"User agent" que significa: Navegador, ou seja, foi o navegador que automaticamente criou um style para a página!
+
+dica: usar o aplicativo web Dev Tools para auxiliar na configuração das medidas de uma caixa.
+
+para centralizar a margin se usa no css: `margin: auto;`.
+
+se for para centralizar um texto: `text-align: center;`.
+
+ShortHands - Border
+Exemplo:
+border-width: 10px;
+border-style: solid;
+border color: #fff;
+
+Simplificado
+border: 10px solid #fff; 
+

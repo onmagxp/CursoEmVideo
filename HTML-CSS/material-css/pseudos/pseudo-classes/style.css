@@ -1,0 +1,148 @@
+/*
+Aula de CSS: Pseudo-classes
+
+Pseudo-classes:
+Uma pseudo-classe é usada para definir um estado especial de um elemento. Ela é precedida por ":" (dois-pontos).
+
+1. :hover - Aplica um estilo quando o usuário passa o mouse sobre um elemento.
+2. :active - Aplica um estilo ao elemento ativo (clicado).
+3. :focus - Aplica um estilo ao elemento que está focado (selecionado).
+4. :nth-child(n) - Aplica um estilo ao enésimo filho de um elemento.
+5. :first-child - Aplica um estilo ao primeiro filho de um elemento.
+6. :last-child - Aplica um estilo ao último filho de um elemento.
+7. :nth-of-type(n) - Aplica um estilo ao enésimo elemento de um tipo específico.
+8. :first-of-type - Aplica um estilo ao primeiro elemento de um tipo específico.
+9. :last-of-type - Aplica um estilo ao último elemento de um tipo específico.
+10. :not(selector) - Aplica um estilo a todos os elementos que não correspondem ao seletor.
+
+Vamos explorar cada uma com exemplos e propriedades que você pode usar.
+
+1. :hover
+Exemplo:
+*/
+
+button:hover {
+    background-color: yellow; /* Muda a cor de fundo */
+    color: black; /* Muda a cor do texto */
+    border: 1px solid black; /* Define uma borda */
+    cursor: pointer; /* Muda o cursor do mouse */
+    /* Outras propriedades possíveis: box-shadow, font-size, padding, margin */
+}
+
+/* 
+2. :active
+Exemplo:
+*/
+
+a:active {
+    color: red; /* Muda a cor do texto */
+    text-decoration: none; /* Remove a sublinha */
+    background-color: lightgray; /* Muda a cor de fundo */
+    /* Outras propriedades possíveis: font-weight, transform, border */
+}
+
+/* 
+3. :focus
+Exemplo:
+*/
+
+input:focus {
+    border: 2px solid blue; /* Define uma borda */
+    outline: none; /* Remove o contorno padrão */
+    background-color: #f0f0f0; /* Muda a cor de fundo */
+    /* Outras propriedades possíveis: box-shadow, color, width, height */
+}
+
+/* 
+4. :nth-child(n)
+Aplica um estilo ao enésimo filho de um elemento. 
+Por exemplo, li:nth-child(2) aplica o estilo ao segundo elemento <li> de um <ul> ou <ol>.
+
+Exemplo:
+*/
+
+li:nth-child(2) {
+    color: green; /* Muda a cor do texto */
+    font-weight: bold; /* Define o peso da fonte */
+    /* Outras propriedades possíveis: font-size, margin, padding */
+}
+
+/*
+5. :first-child
+Exemplo:
+*/
+
+p:first-child {
+    font-weight: bold; /* Define o peso da fonte */
+    margin-top: 20px; /* Define a margem superior */
+    /* Outras propriedades possíveis: font-size, color, text-transform */
+}
+
+/* 
+6. :last-child
+Exemplo:
+*/
+
+p:last-child {
+    font-style: italic; /* Define o estilo da fonte */
+    margin-bottom: 20px; /* Define a margem inferior */
+    /* Outras propriedades possíveis: font-size, color, border */
+}
+
+/* 
+7. :nth-of-type(n)
+Aplica um estilo ao enésimo elemento de um tipo específico dentro do seu pai. 
+Por exemplo, p:nth-of-type(3) aplica o estilo ao terceiro <p> dentro de um contêiner.
+
+Exemplo:
+*/
+
+p:nth-of-type(3) {
+    text-decoration: underline; /* Sublinha o texto */
+    font-size: 18px; /* Define o tamanho da fonte */
+    /* Outras propriedades possíveis: color, margin, padding */
+}
+
+/* 
+8. :first-of-type
+Exemplo:
+*/
+
+div:first-of-type {
+    background-color: lightblue; /* Muda a cor de fundo */
+    padding: 10px; /* Define o preenchimento */
+    /* Outras propriedades possíveis: border, margin, width */
+}
+
+/* 
+9. :last-of-type
+Exemplo:
+*/
+
+div:last-of-type {
+    background-color: lightgreen; /* Muda a cor de fundo */
+    margin-bottom: 20px; /* Define a margem inferior */
+    /* Outras propriedades possíveis: border, padding, height */
+}
+
+/* 
+10. :not(selector)
+Exemplo:
+*/
+
+p:not(.exclude) {
+    color: purple; /* Muda a cor do texto */
+    font-family: Arial, sans-serif; /* Define a família da fonte */
+    /* Outras propriedades possíveis: font-size, text-align, background-color */
+}
+
+/* 
+Explicação adicional:
+
+- :nth-child(n): n pode ser um número, uma palavra-chave (odd para ímpares, even para pares), ou uma fórmula (2n para cada segundo filho).
+- :nth-of-type(n): Similar ao :nth-child, mas aplica-se apenas a elementos do mesmo tipo.
+- :first-of-type, :last-of-type: Aplicam-se ao primeiro e último elemento de um tipo específico dentro de um contêiner.
+
+Fim da aula de pseudo-classes.
+*/
+

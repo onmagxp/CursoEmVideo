@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Entre em contato comigo para discutir projetos ou colaborações.">
+    <meta name="keywords" content="Contato, Email, Redes Sociais, Formulário de Contato">
+</head>
+<body>
+    <!-- Cabeçalho com navegação -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Seção principal -->
+    <main>
+        <section id="contact-container">
+            <h1>Contato</h1>
+            <p>Se você tiver alguma dúvida ou quiser discutir um projeto, entre em contato comigo!</p>
+            <form action="mailto:matheus@exemplo.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <!-- Rodapé com links de redes sociais -->
+    <footer>
+        <h2>Conecte-se Comigo!</h2>
+        <ul>
+            <li><a href="https://github.com/onmagxp/" target="_blank" rel="noopener noreferrer external">GitHub</a></li>
+            <li><a href="https://instagram.com/onmagxp/" target="_blank" rel="noopener noreferrer external">Instagram</a></li>
+        </ul>
+        <p>&copy;2024 Matheus. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

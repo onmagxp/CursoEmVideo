@@ -1,0 +1,96 @@
+/*
+Aula de CSS: Box-shadow
+
+A propriedade `box-shadow` é usada para adicionar sombras a elementos. 
+Ela permite criar várias sombras em um único elemento, e cada sombra é especificada com as seguintes propriedades:
+
+1. offset-x - Deslocamento horizontal da sombra.
+2. offset-y - Deslocamento vertical da sombra.
+3. blur-radius - Raio de desfoque da sombra (opcional).
+4. spread-radius - Raio de expansão da sombra (opcional).
+5. color - Cor da sombra.
+6. inset - A sombra será desenhada para dentro do elemento (opcional).
+
+Exemplo básico:
+*/
+
+.box1 {
+    box-shadow: 10px 10px 5px #888888; /* sombra com deslocamento x=10px, y=10px, desfoque=5px, cor=#888888 */
+}
+
+.box2 {
+    box-shadow: 5px 5px; /* sombra com deslocamento x=5px, y=5px */
+}
+
+/* Exemplos detalhados */
+
+.box3 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* sombra com deslocamento x=0, y=4px, desfoque=8px, sem expansão, cor=rgba(0, 0, 0, 0.2) */
+}
+
+.box4 {
+    box-shadow: 3px 3px 10px 2px rgba(0, 0, 255, 0.5); /* sombra com deslocamento x=3px, y=3px, desfoque=10px, expansão=2px, cor=rgba(0, 0, 255, 0.5) */
+}
+
+.box5 {
+    box-shadow: -5px -5px 15px 5px #FF5733; /* sombra com deslocamento x=-5px, y=-5px, desfoque=15px, expansão=5px, cor=#FF5733 */
+}
+
+.box6 {
+    box-shadow: inset 5px 5px 10px #000000; /* sombra interna com deslocamento x=5px, y=5px, desfoque=10px, cor=#000000 */
+}
+
+.box7 {
+    box-shadow: 5px 5px 10px 5px rgba(0, 255, 0, 0.3), 10px 10px 20px 0px rgba(0, 0, 0, 0.1); /* duas sombras, a primeira com deslocamento x=5px, y=5px, desfoque=10px, expansão=5px, cor=rgba(0, 255, 0, 0.3), e a segunda com deslocamento x=10px, y=10px, desfoque=20px, sem expansão, cor=rgba(0, 0, 0, 0.1) */
+}
+
+/*
+Propriedades detalhadas:
+
+1. offset-x: Valor positivo desloca a sombra para a direita, valor negativo desloca para a esquerda.
+2. offset-y: Valor positivo desloca a sombra para baixo, valor negativo desloca para cima.
+3. blur-radius: Quanto maior o valor, mais desfocada será a sombra. Valor padrão é 0 (sombra nítida).
+4. spread-radius: Valor positivo aumenta o tamanho da sombra, valor negativo diminui.
+5. color: A cor da sombra pode ser especificada em qualquer formato de cor CSS (nome, hexadecimal, rgba, etc.).
+6. inset: Opcional, coloca a sombra para dentro do elemento em vez de fora.
+
+
+/* Individual */
+box-shadow: 10px; /* offset-x - Deslocamento horizontal da sombra. Valores positivos movem a sombra para a direita, negativos para a esquerda.*/
+box-shadow: 5px;  /* offset-y - Deslocamento vertical da sombra. Valores positivos movem a sombra para baixo, negativos para cima.*/
+box-shadow: 5px;  /* blur-radius - O desfoque da sombra. Quanto maior o valor, mais difusa será a sombra.*/
+box-shadow: 2px;  /* spread-radius - A expansão da sombra. Valores positivos aumentam o tamanho da sombra, valores negativos a reduzem.*/
+box-shadow: rgba(0, 0, 0, 0.5); /* color */
+
+/* Shorthand */
+box-shadow: 10px 5px 5px 2px rgba(0, 0, 0, 0.5);
+
+
+Exemplo prático:
+*/
+
+.card {
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra sutil para dar profundidade */
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* sombra para criar um efeito de botão elevado */
+    cursor: pointer;
+}
+
+.button:hover {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* aumenta a sombra ao passar o mouse */
+}
+
+
+/* Fim da aula de box-shadow */

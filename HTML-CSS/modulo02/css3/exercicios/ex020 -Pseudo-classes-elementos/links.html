@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {  
+            background-color: #7C296A;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            text-align: justify;
+        }
+
+        nav a {
+            color: #ABDD93;
+            text-decoration: none;
+            font-weight: medium;
+        }
+
+        a:visited {
+            color: #AAA439;
+        }
+
+        a:hover {
+            color: #FFFAAA;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: #807A15;
+        }
+
+        .especial {
+            background-color: #3e003088;
+        }
+
+        .especial::before {
+            content: '→';   
+        }
+
+        .especial::after {
+            content: '←';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <nav>
+        <ul>
+            <li><a href="https://github.com/onmagxp" target="_blank" rel="noopenner noreferrer external">Repositório do GitHub</a></li>
+            <li><a href="https://www.instagram.com/onmagxp/" target="_blank" rel="noopenner noreferrer external" class="especial">Meu Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/onmagxp/" target="_blank" rel="noopenner noreferrer external">Meu Linkedin</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

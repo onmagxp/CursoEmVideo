@@ -1,0 +1,96 @@
+/*
+Aula de CSS: Criando uma Lista Responsiva com Grid
+
+Nesta aula, vamos aprender a criar uma lista responsiva usando display grid. Cada item da lista será composto por uma imagem e um texto abaixo dela.
+
+1. Estrutura HTML:
+Primeiro, vamos definir a estrutura HTML básica para nossa lista.
+*/
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista com Grid</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="imagem1.jpg" alt="Imagem 1">
+            <p>Texto abaixo da imagem 1</p>
+        </div>
+        <div class="grid-item">
+            <img src="imagem2.jpg" alt="Imagem 2">
+            <p>Texto abaixo da imagem 2</p>
+        </div>
+        <div class="grid-item">
+            <img src="imagem3.jpg" alt="Imagem 3">
+            <p>Texto abaixo da imagem 3</p>
+        </div>
+        <!-- Adicione mais itens conforme necessário -->
+    </div>
+</body>
+</html>
+
+/*
+2. CSS para Grid Responsivo:
+
+Agora vamos definir o CSS para tornar a lista responsiva usando display grid.
+*/
+
+body {
+    font-family: Arial, sans-serif; /* Define a família da fonte */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que o padding e a borda sejam incluídos na largura total e altura */
+}
+
+.grid-container {
+    display: grid; /* Define o contêiner como grid */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Define as colunas responsivas */
+    gap: 20px; /* Define o espaçamento entre os itens do grid */
+    padding: 20px; /* Define o padding do contêiner */
+}
+
+.grid-item {
+    display: flex; /* Define o item como flexível */
+    flex-direction: column; /* Alinha os itens na coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px; /* Define o padding do item */
+    background-color: #f0f0f0; /* Define a cor de fundo do item */
+    border-radius: 8px; /* Define bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+}
+
+.grid-item img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 4px; /* Define bordas arredondadas na imagem */
+    margin-bottom: 10px; /* Adiciona espaçamento abaixo da imagem */
+}
+
+.grid-item p {
+    margin: 0; /* Remove a margem padrão do parágrafo */
+    font-size: 16px; /* Define o tamanho da fonte */
+    color: #333; /* Define a cor do texto */
+}
+
+/*
+Explicação:
+- `display: grid;` transforma o contêiner em um grid.
+- `grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));` cria um layout responsivo onde as colunas se ajustam automaticamente com um mínimo de 200px e se expandem igualmente.
+- `gap: 20px;` adiciona espaçamento entre os itens do grid.
+- `flex-direction: column;` alinha os itens (imagem e texto) verticalmente dentro do item do grid.
+- `align-items: center;` e `text-align: center;` centralizam o conteúdo.
+- `max-width: 100%;` garante que a imagem se ajuste ao tamanho do contêiner sem exceder sua largura.
+- `box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);` adiciona uma sombra sutil para destacar os itens do grid.
+
+Conclusão:
+Com essas configurações, criamos uma lista responsiva onde cada item é composto por uma imagem e um texto abaixo dela. A lista se ajusta automaticamente ao tamanho da tela, garantindo uma apresentação elegante e funcional em diferentes dispositivos.
+
+Fim da aula sobre criação de uma lista responsiva com Grid.
+*/
+

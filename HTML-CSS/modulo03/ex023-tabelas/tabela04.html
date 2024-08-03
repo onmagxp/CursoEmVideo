@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+
+        /*
+        #6658f5
+        #58e0f5
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        caption {
+            font-size: 1.5em;
+            padding: 20px;
+            font-weight: bold;
+        }
+
+        .table-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        table  {
+            background-color: #e5f5f699;
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+         th, td {
+            border: 1px solid #000000;
+            padding: 10px;
+        }
+        
+        thead {
+            background-color: #6558f5d1;
+        }
+
+        tbody th {
+            background-color: #587df5d1;
+        }
+
+        tfoot {
+            background-color: #6558f5d1;
+        }
+        .rowcolor {
+            background-color: #58e0f5d1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="table-container">
+        <table>
+            <caption>Filmes Favoritos</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Grupo</th>
+                    <th scope="col">Nomes</th>
+                    <th scope="colgroup" colspan="3">Filmes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="rowgroup" rowspan="4">Mulheres</th>
+                    <td>Maria</td>
+                    <td>Alien</td>
+                    <td>Titanic</td>
+                    <td>Coco</td>
+                </tr>
+                <tr>
+                    <tr>
+                        <td class="rowcolor">Ana</td>
+                        <td class="rowcolor">Se7en</td>
+                        <td class="rowcolor">Shrek</td>
+                        <td class="rowcolor">Up</td>
+                    </tr>
+                    <tr>
+                        <td>Clara</td>
+                        <td>Psycho</td>
+                        <td>Dune</td>
+                        <td>Ghost</td>
+                    </tr>
+                    <tr>
+                        <th scope="rowgroup" rowspan="3">Homens</th>
+                        <td class="rowcolor">João</td>
+                        <td class="rowcolor">Jaws</td>
+                        <td class="rowcolor">Rocky</td>
+                        <td class="rowcolor">Heat</td>
+                    </tr>
+                    <tr>
+                        <td>Pedro</td>
+                        <td>Gladiator</td>
+                        <td>Crash</td>
+                        <td>Rush</td>
+                    </tr>
+                    <tr>
+                        <td class="rowcolor">Carlos</td>
+                        <td class="rowcolor">Fargo</td>
+                        <td class="rowcolor">Troy</td>
+                        <td class="rowcolor">Sing</td>
+                    </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row" colspan="4">Total de Filmes</th>
+                    <td>18</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>

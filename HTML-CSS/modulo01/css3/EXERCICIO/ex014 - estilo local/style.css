@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+body {
+    background-color: #202223;
+    font-size: 20px;
+}
+    @font-face 
+        font-family: 'Rache Rache';
+        src: url('RacheRache.eot');
+        src: local('Rache Rache'), local('RacheRache'),
+            url('RacheRache.eot?#iefix') format('embedded-opentype'),
+            url('RacheRache.woff2') format('woff2'),
+            url('RacheRache.woff') format('woff'),
+            url('RacheRache.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+
+    
+h1 {
+    color: #e8dccc;
+}
+h2 {
+    color: #e8dccc;
+}
+p {
+    color: #F2F3F4;
+    text-align: left;
+}
+a {
+    color: #F2F3F4;
+}

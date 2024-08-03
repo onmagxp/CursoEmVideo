@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas absolutas:
+            cm, mm, in, px, pt, pc
+
+            Medidas relativas:
+            em, ex, rem, vw, vh, %
+            16px geralmente é = 1em
+
+            recomendações da W: 3C
+            utilizar sempre px ou em.
+            */
+        }
+        
+        h1 {
+            font-family: 'work Sans', sans-serif;
+            font-weight: bolder; /* weight= peso*/
+            font-size: 3em;
+            font-style: italic;
+            /* shorthand font
+            - font-style -> font-weight -> font-size -> font-family */
+            font: italic bolder 3em 'work Sans', sans-serif;
+            /* resumo: shorthand é uma propriedade que me permite escrever várias coisas em uma linha, mas ela não se aplica a tudo. Mas existem várias que podemos utilizar em nosso documento HTML*/
+        }
+
+        h2 {
+            font-family: 'work Sans', sans-serif;
+            font-weight: bolder; /* weight= peso*/
+            font-size: 3em;
+            font-style: italic;
+            /* shorthand font
+            - font-style -> font-weight -> font-size -> font-family */
+            font: italic bolder 3em 'work Sans', sans-serif;
+            /* resumo: shorthand é uma propriedade que me permite escrever várias coisas em uma linha, mas ela não se aplica a tudo. Mas existem várias que podemos utilizar em nosso documento HTML*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta assumenda similique omnis dolore voluptatem placeat, quibusdam cum hic odit possimus voluptatum provident sequi maiores at voluptas libero in modi doloremque?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta assumenda similique omnis dolore voluptatem placeat, quibusdam cum hic odit possimus voluptatum provident sequi maiores at voluptas libero in modi doloremque?</p>
+
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, nostrum voluptatibus quibusdam modi magnam alias corporis quisquam itaque, iste deserunt quos, ab omnis odio repellendus officia pariatur reprehenderit quia consequatur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi assumenda tempora odit similique, nostrum a officiis mollitia, nobis possimus eum corrupti minus sequi cumque, expedita dolorum at perspiciatis deleniti ipsam!</p>
+</body>
+</html>

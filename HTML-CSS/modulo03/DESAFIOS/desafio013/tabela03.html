@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela03</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        td {
+            border: 1px solid black;
+            text-align: center;
+            background: gray;
+        }
+
+        #table-container {
+            display: flex;
+            justify-content: center;
+            height: 100%;
+        }
+
+        table {
+            width: 400px;
+        }
+        
+        .colspan {
+            height: 30px;
+            background-color: darkgray;
+        }
+
+        .rowspan {
+            width: 40px;
+            background-color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <div id="table-container">
+        <table>
+            <tr>
+                <td colspan="4" class="colspan">A</td>
+                <td rowspan="4" class="rowspan">B</td>
+            <!--<td>C</td>
+                <td>D</td>
+                <td>E</td>-->
+            </tr>
+            <tr>
+                <td rowspan="4" class="rowspan">F</td>
+                <td>G</td>
+                <td>H</td>
+                <td>I</td>
+            <!--<td>J</td>-->
+            </tr>
+            <tr>
+                <!--<td>K</td>-->
+                <td>L</td>
+                <td>M</td>
+                <td>N</td>
+            <!--<td>O</td>-->
+            </tr>
+            <tr>
+                <!--<td>P</td>-->
+                <td>Q</td>
+                <td>R</td>
+                <td>S</td>
+            <!--<td>T</td>-->
+            </tr>
+            <tr>
+                <!--<td>U</td>-->
+            <!--<td>V</td>
+                <td>X</td>
+                <td>W</td>-->
+                <td colspan="4" class="colspan">Y</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

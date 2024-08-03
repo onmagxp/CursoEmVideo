@@ -1,0 +1,158 @@
+/*
+Aula de CSS: Unidades Responsivas
+
+As unidades responsivas no CSS são essenciais para criar layouts flexíveis e adaptáveis a diferentes tamanhos de tela. As principais unidades responsivas são `em`, `rem`, `%`, `vw`, e `vh`.
+
+1. O que são Unidades Responsivas:
+Unidades responsivas ajustam o tamanho de elementos com base em fatores relativos, como o tamanho do elemento pai, o tamanho da raiz do documento, ou o tamanho da viewport.
+
+2. Tipos de Unidades Responsivas:
+Vamos explorar cada tipo de unidade responsiva, entender como usá-las e quando aplicá-las.
+
+3. Exemplos e Hacks:
+Dicas práticas para usar unidades responsivas de maneira eficiente e criar layouts adaptáveis.
+
+1. O que são Unidades Responsivas
+Unidades responsivas são valores que mudam de acordo com o tamanho da tela, tornando o design flexível. Diferente de unidades fixas como `px`, as unidades responsivas permitem que os elementos se ajustem dinamicamente.
+
+2. Tipos de Unidades Responsivas
+Vamos ver cada unidade responsiva, suas características e exemplos de uso.
+
+2.1. Unidades em (em)
+- Definição: `em` é uma unidade relativa ao tamanho da fonte do elemento pai.
+- Usos: Ideal para definir tamanhos de fonte e espaçamentos que se ajustem ao contexto do elemento.
+
+Exemplo:
+*/
+
+.parent {
+    font-size: 16px; /* Tamanho da fonte do elemento pai */
+}
+
+.child {
+    font-size: 2em; /* 2 vezes o tamanho da fonte do elemento pai (32px) */
+    padding: 1em; /* 16px de padding, igual ao tamanho da fonte do pai */
+}
+
+/*
+Explicação:
+- `font-size: 2em;` define o tamanho da fonte como 2 vezes o tamanho da fonte do elemento pai.
+- `padding: 1em;` define o padding como igual ao tamanho da fonte do elemento pai.
+
+2.2. Unidades rem (rem)
+- Definição: `rem` é uma unidade relativa ao tamanho da fonte do elemento raiz (`<html>`).
+- Usos: Consistente para definir tamanhos que se baseiam na raiz do documento, facilitando a manutenção do layout.
+
+Exemplo:
+*/
+
+html {
+    font-size: 16px; /* Tamanho da fonte do elemento raiz */
+}
+
+.child-rem {
+    font-size: 2rem; /* 2 vezes o tamanho da fonte do elemento raiz (32px) */
+    margin: 1rem; /* 16px de margem, igual ao tamanho da fonte do raiz */
+}
+
+/*
+Explicação:
+- `font-size: 2rem;` define o tamanho da fonte como 2 vezes o tamanho da fonte do elemento raiz.
+- `margin: 1rem;` define a margem como igual ao tamanho da fonte do elemento raiz.
+
+2.3. Unidades Percentuais (%)
+- Definição: `%` é uma unidade relativa ao tamanho do elemento pai.
+- Usos: Excelente para definir larguras, alturas e espaçamentos em relação ao elemento pai, criando layouts fluídos.
+
+Exemplo:
+*/
+
+.container {
+    width: 80%; /* 80% da largura do elemento pai */
+    height: 50%; /* 50% da altura do elemento pai */
+}
+
+/*
+Explicação:
+- `width: 80%;` define a largura como 80% da largura do elemento pai.
+- `height: 50%;` define a altura como 50% da altura do elemento pai.
+
+2.4. Unidades da Viewport (vw e vh)
+- Definição: `vw` é 1% da largura da viewport, e `vh` é 1% da altura da viewport.
+- Usos: Perfeito para ajustar elementos ao tamanho da tela, garantindo responsividade.
+
+Exemplo:
+*/
+
+.viewport-box {
+    width: 50vw; /* 50% da largura da viewport */
+    height: 50vh; /* 50% da altura da viewport */
+}
+
+/*
+Explicação:
+- `width: 50vw;` define a largura como 50% da largura da viewport.
+- `height: 50vh;` define a altura como 50% da altura da viewport.
+
+3. Exemplos e Hacks
+Vamos ver algumas dicas práticas e hacks para usar unidades responsivas de maneira eficiente.
+
+3.1. Tipografia Flexível com rem
+Definir a tipografia em `rem` permite um ajuste global fácil ao alterar o tamanho da fonte do elemento raiz.
+
+Exemplo:
+*/
+
+html {
+    font-size: 18px; /* Aumenta o tamanho base da fonte */
+}
+
+.body-text {
+    font-size: 1rem; /* Igual ao tamanho da fonte do elemento raiz */
+}
+
+.header {
+    font-size: 2rem; /* 2 vezes o tamanho da fonte do elemento raiz */
+}
+
+/*
+Explicação:
+- Alterar `font-size` do `<html>` ajusta toda a tipografia definida em `rem` no documento.
+
+3.2. Layout Fluído com vw e vh
+Usar `vw` e `vh` para elementos de layout permite criar designs que se ajustam automaticamente ao tamanho da tela.
+
+Exemplo:
+*/
+
+.fullscreen {
+    width: 100vw; /* Ocupa toda a largura da viewport */
+    height: 100vh; /* Ocupa toda a altura da viewport */
+}
+
+/*
+Explicação:
+- `width: 100vw;` e `height: 100vh;` garantem que o elemento ocupe toda a tela.
+
+3.3. Misturando Unidades para Flexibilidade
+Combinar diferentes unidades pode resultar em layouts mais flexíveis e adaptáveis.
+
+Exemplo:
+*/
+
+.flexible-box {
+    padding: 2em; /* Padding relativo ao tamanho da fonte do elemento pai */
+    margin: 1rem; /* Margem relativa ao tamanho da fonte do elemento raiz */
+    width: 50%; /* Largura relativa ao elemento pai */
+    height: 50vh; /* Altura relativa à viewport */
+}
+
+/*
+Explicação:
+- Combinar `em`, `rem`, `%`, e `vh` para um layout altamente adaptável e responsivo.
+
+Conclusão:
+Nesta aula, exploramos as unidades responsivas no CSS. Vimos como usar `em`, `rem`, `%`, `vw`, e `vh` para criar layouts flexíveis que se adaptam a diferentes tamanhos de tela. Com esses conceitos, você pode desenvolver designs que oferecem uma excelente experiência de usuário em qualquer dispositivo.
+
+Fim da aula sobre unidades responsivas.
+*/

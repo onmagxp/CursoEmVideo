@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este video está hospedado no meu próprio servidor</p>
+    
+     <!-- Vídeo com controles padrão -->
+    <h2>Vídeos com controles padrão</h2>
+    <video controls poster="./imagens/limoes-capa.png" width="560" height="260">
+        <source src="midias/Meu-Video.mp4" type="video/mp4">
+        <source src="midias/Meu-Video.mkv" type="video/mkv">
+        <source src="midias/Meu-Video.webm" type="video/webm">
+        <p>seu navegador não suporta o elemento de vídeo.</p>
+    </video>
+    
+     <!-- Vídeo que começa automaticamente e em loop -->
+      <h2>Vídeos que começa automaticamente e em loop</h2>
+      <video controls autoplay loop poster="./imagens/limoes-capa.png" width="560" height="260">
+        <source src="midias/Meu-Video.mp4" type="video/mp4">
+        <source src="midias/Meu-Video.mkv" type="video/mkv">
+        <source src="midias/Meu-Video.webm" type="video/webm">
+        <p>seu navegador não suporta o elemento de vídeo.</p>
+    </video>
+
+     <!-- Vídeo com preload metadata e inicialmente silenciado -->
+      <h2>Vídeo com preload metadata e inicialmente silenciado</h2>
+      <video controls preload="metadata" muted poster="./imagens/limoes-capa.png" width="560" height="260">
+        <source src="midias/Meu-Video.mp4" type="video/mp4">
+        <source src="midias/Meu-Video.mkv" type="video/mkv">
+        <source src="midias/Meu-Video.webm" type="video/webm">
+        <p>seu navegador não suporta o elemento de vídeo.</p>
+    </video>
+
+    <h2>Inserindo vídeos do YouTube</h2>
+    <iframe width="560" height="260" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=vW31Wk5kCxPtQFYe&amp;start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

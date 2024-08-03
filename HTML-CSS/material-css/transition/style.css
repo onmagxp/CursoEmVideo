@@ -1,0 +1,114 @@
+/*
+Aula de CSS: Transition
+
+A propriedade `transition` permite que as mudanças de estilo em um elemento ocorram de forma suave ao longo do tempo, em vez de instantaneamente. 
+
+A `transition` pode ser definida com as seguintes propriedades:
+
+1. transition-property - A(s) propriedade(s) CSS a serem animadas.
+2. transition-duration - A duração da transição.
+3. transition-timing-function - A função de temporização da transição.
+4. transition-delay - O atraso antes do início da transição.
+
+Exemplo básico:
+*/
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: background-color 0.5s ease; /* transição suave da cor de fundo em 0.5 segundos */
+}
+
+.box:hover {
+    background-color: blue; /* muda a cor de fundo ao passar o mouse */
+}
+
+/* Exemplos detalhados */
+
+.box1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: width 2s; /* transição da largura em 2 segundos */
+}
+
+.box1:hover {
+    width: 200px; /* aumenta a largura ao passar o mouse */
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: all 1s ease-in-out; /* transição de todas as propriedades em 1 segundo com efeito ease-in-out */
+}
+
+.box2:hover {
+    width: 200px;
+    height: 200px;
+    background-color: green; /* muda várias propriedades ao passar o mouse */
+}
+
+.box3 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: height 1s, background-color 2s; /* transição da altura em 1 segundo e da cor de fundo em 2 segundos */
+}
+
+.box3:hover {
+    height: 200px;
+    background-color: yellow; /* muda altura e cor de fundo ao passar o mouse */
+}
+
+/* Propriedades detalhadas */
+
+.transition1 {
+    transition-property: opacity; /* define a propriedade a ser animada */
+    transition-duration: 2s; /* define a duração da transição */
+    transition-timing-function: linear; /* define a função de temporização da transição */
+    transition-delay: 1s; /* define o atraso antes do início da transição */
+}
+
+.transition1:hover {
+    opacity: 0.5; /* muda a opacidade ao passar o mouse */
+}
+
+.transition2 {
+    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* usa a função de temporização cubic-bezier para um efeito personalizado */
+}
+
+.transition2:hover {
+    transform: rotate(45deg); /* rotaciona o elemento ao passar o mouse */
+}
+
+/*
+Funções de temporização comuns:
+
+1. ease - Padrão, transição começa devagar, acelera no meio e desacelera no final.
+2. linear - Transição a uma velocidade constante.
+3. ease-in - Transição começa devagar e acelera.
+4. ease-out - Transição começa rápido e desacelera.
+5. ease-in-out - Transição começa devagar, acelera no meio e desacelera no final.
+6. cubic-bezier(n,n,n,n) - Permite definir uma curva personalizada para a transição.
+
+Exemplo prático:
+*/
+
+.button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* transição da cor de fundo e da transformação */
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3; /* muda a cor de fundo ao passar o mouse */
+    transform: scale(1.1); /* aumenta o tamanho ao passar o mouse */
+}
+
+/* Fim da aula de transition */
