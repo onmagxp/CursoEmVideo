@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa</title>
+    <style>
+        body {
+            background-color: #1e2125ff;
+            font-size: 16px;
+            font-family: monospace;
+        }
+
+        h1 {
+            color: #e9dfceff;
+            font-size: 6rem;
+        }
+
+        p {
+            color: #f0f0f0ff;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Óla, mundo!</h1>
+    <p>Já me livrei dessa maldição.</p>
+
+    <script>
+        var n1 = Number.parseInt(window.prompt('Digite um número: '))
+        var n2 = Number.parseInt(window.prompt('Digite outro número: '))
+        var s = n1 + n2
+        window.alert ('A soma dos números é: ' + s)
+        // O `+` no window.alert é usado como concatenação
+        // Mas ele também pode ser usado como adição.
+        // No var em (`var s = n1 + n2`) automaticamente ele está interpretando o n1 + n2 como string, pois o (`window.prompt) ele retorna uma string mesmo sendo enviado um número, isso ocorre porque é uma característica da comando.`
+        // Ou seja:
+        //  number + number para adição.
+        //  string + string para concatenação.
+        // Para converter (`String`) para (`Número`) Temos três maneiras, usamos [Number.parseInt(n)] para números inteiros, e [Number.parseFloat] para números racionais. Também temos nas versões mais atuais a forma resumida que é somente [Number] esse comando faz com que a linguaguem interprete se é número inteiro ou racional de forma automática.
+        // Ou seja:
+        // Só usamos as formas antigas acima se eu quiser forçar apenas aquele tipo de número.
+        
+        // Para conveter (`Número`) para (`String`) temos duas maneiras, usamos:
+        // String(n) > que é String mais o que quero converter ou `n.String()`
+        // As suas Maneiras são a mesma coisa.
+
+        // Formatando Strings:
+        // var s = 'JavaScript'
+        // 'Eu estou aprendendo s'  >  Não faz interpolação
+        // 'Eu estou aprendendo' + s  >  Usa Concatenação 
+        // `Eu estou aprendendo` ${s} > usa Template Strings (a forma mais atual de se formatar uma String e melhor.)
+
+//         Terminal:
+//         > nome = 'Matheus'
+// 'Matheus'
+// > idade = '28'
+// '28'
+// > nota = '5.5'
+// '5.5'
+// > nome = 'Matheus'
+// 'Matheus'
+// > idade = 28
+// 28
+// > nota = 5.5
+// 5.5
+// > nome
+// 'Matheus'
+// > idade
+// 28
+// > nota
+// 5.5
+
+// > 'O aluno ' + nome + ' de ' + idade + ' anos tirou a nota ' + nota
+// 'O aluno Matheus de 28 anos tirou a nota 5.5'
+
+                 // ****Este exemplo utilizou a formatação  Concatenação****
+
+// `O aluno ${nome} de ${idade} anos tirou a nota ${nota}`
+// 'O aluno Matheus de 28 anos tirou a nota 5.5'
+
+                // *********Este exemplo utilizou a formatação Template String            
+    </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+o que é DOM?
+
+o que é Arvore DOM?
+window e seus objetos;
+documennt e seus objetos;
+html e seus objetos;
+explique também quem é child e quem é parent;
+
+
